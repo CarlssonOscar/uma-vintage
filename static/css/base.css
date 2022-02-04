@@ -5,10 +5,14 @@ html {
 body {
     background: url('/media/uma.jpg') no-repeat center center fixed;
     background-size: 350px;
-    height: calc(100vh - 150px);
+    height: 100%;
     font-family: 'Murecho', sans-serif;
     color: black;
     }
+.header-container {
+    z-index: 99;
+    height: 200px;
+}
 
 /* from Bulma */
 .icon {
