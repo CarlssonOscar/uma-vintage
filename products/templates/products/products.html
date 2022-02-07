@@ -11,7 +11,6 @@
 
 {% block content %}
 <div class="cover"></div>
-<div class="container-fluid">
     <div class="container-fluid w-75">
         <div class="row">
             <div class="product-container col-10 offset-1">
@@ -20,13 +19,14 @@
                     {% for product in products %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
+                            <!-- Django object requires . (product.id) -->
                             {% if product.image %}
-                            <a href="">
+                            <a href="{% url 'product_details' product.id %}">
                                 <img class="card-img-top img-fluid" src="{{ product.image.url }}"
                                     alt="{{ product.name }}">
                             </a>
                             {% else %}
-                            <a href="">
+                            <a href="{% url 'product_details' product.id %}">
                                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
                                     alt="{{ product.name }}">
                             </a>
