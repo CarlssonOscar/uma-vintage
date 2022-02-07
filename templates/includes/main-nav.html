@@ -16,9 +16,9 @@
                 Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">T-shirts</a>
-                <a href="" class="dropdown-item">Sweaters</a>
-                <a href="" class="dropdown-item">Jackets</a>
+                <a href="{% url 'products' %}?category=t_shirt" class="dropdown-item">T-shirts</a>
+                <a href="{% url 'products' %}?category=sweater" class="dropdown-item">Sweaters</a>
+                <a href="{% url 'products' %}?category=jacket" class="dropdown-item">Jackets</a>
             </div>
         </li>
     </ul>
