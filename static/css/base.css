@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/uma.jpg') no-repeat center center fixed;
+    background: url('/media/uma.jpg') no-repeat center center;
     background-size: 400px;
     height: 100%;
     font-family: 'Murecho', sans-serif;
@@ -66,6 +66,16 @@ body {
 
 .shop-now {
     padding-top: 100px;
+    z-index: 99;
+    position: absolute;
+}
+
+.absoulute {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 100%;
 }
 
 /* -------------------------------- Media Queries */
@@ -87,9 +97,6 @@ body {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 130px;
-    }
 }
 
 @media (max-width: 992px) {
@@ -100,5 +107,9 @@ body {
     body {
         background-size: 250px;
         height: calc(100% - 120px);
+    }
+
+    .header-container {
+        height: 10px;
     }
 }
