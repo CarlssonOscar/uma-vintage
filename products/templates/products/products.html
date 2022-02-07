@@ -12,12 +12,25 @@
 {% block content %}
 <div class="cover"></div>
     <div class="container-fluid w-75">
-        <div class="row">
             <div class="product-container col-10 offset-1">
-                <div class="row mt-1 mb-2"></div>
+                <div class="row mt-1 mb-2">
+                    <div class="col-12 d-flex justify-content-center justify-content-md-end">
+                        <div class="sort-select-wrapper w-35">
+                            <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border-0 border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>+ Filter</option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price Low to High</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price High to Low</option>
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name A-Z</option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name Z-A</option>
+                                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category A-Z</option>
+                                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category Z-A</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     {% for product in products %}
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="card h-100 border-0">
                             <!-- Django object requires . (product.id) -->
                             {% if product.image %}
@@ -52,12 +65,8 @@
                     </div>
                     {% endif %}
                     {% if forloop.counter|divisibleby:3 %}
-                    <div class="col-12 d-none d-lg-block d-xl-none mb-4">
+                    <div class="col-12 d-none d-lg-block mb-4">
                     </div>
-                    {% endif %}
-                    {% if forloop.counter|divisibleby:4 %}
-                        <div class="col-12 d-none d-xl-block mb-5">
-                        </div>
                     {% endif %}
                     {% endfor %}
                 </div>

@@ -12,7 +12,7 @@ body {
 
 .header-container {
     z-index: 99;
-    height: 200px;
+    height: 100px;
 }
 
 /* from Bulma */
@@ -111,5 +111,8 @@ body {
 
     .header-container {
         height: 10px;
+    }
+    .shop-now {
+        padding-top: 180px;
     }
 }
