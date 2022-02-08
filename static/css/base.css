@@ -4,7 +4,7 @@ html {
 
 body {
     background: url('/media/uma.jpg') no-repeat center center;
-    background-size: 400px;
+    background-size: 350px;
     height: 100%;
     font-family: 'Murecho', sans-serif;
     color: black;
@@ -31,9 +31,12 @@ body {
 .store-button {
     background: black;
     color: white;
-    font-size: 1rem;
-    min-width: 150px;
+    font-size: 1.3rem;
+    width: 150px;
+    height: 45px;
+    border-radius: 0;
 }
+
 
 .btn-white {
     background: white;
@@ -65,12 +68,10 @@ body {
 }
 
 .shop-now {
-    padding-top: 100px;
-    z-index: 99;
-    position: absolute;
+    padding-top: 50px;
 }
 
-.absoulute {
+.absolute {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -104,19 +105,8 @@ body {
 }
 
 @media (max-width: 992px) {
-    .header-container {
-        padding-top: 50px;
-    }
-
     body {
         background-size: 250px;
         height: calc(100% - 120px);
-    }
-
-    .header-container {
-        height: 10px;
-    }
-    .shop-now {
-        padding-top: 180px;
     }
 }
