@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 
+
 def view_cart(request):
     """ Render cart content """
 
@@ -9,15 +10,16 @@ def view_cart(request):
 
 
 def add_to_cart(request, item_id):
-    """ Add a product to the cart """
+    """ Add products to the cart """
 
-    piece = int(request.POST.get('piece'))
+    quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
 
     if item_id in list(cart.keys()):
-        cart[item_id] = piece
+        cart[item_id] += quantity
+    else:
+        cart[item_id] = quantity
 
     request.session['cart'] = cart
-    print(request.session['cart'])
     return redirect(redirect_url)

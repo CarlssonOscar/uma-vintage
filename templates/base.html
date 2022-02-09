@@ -105,13 +105,14 @@
                             <a class="{% if grand_total %}text-black font-weight-bold{% else %}text-black{% endif %} nav-link"
                                 href="{% url 'view_cart' %}">
                                 <div class="text-center">
-                                    <div><i class="fas fa-shopping-cart fa-lg"></i></div>
-                                    <p class="my-0 text-black">
+                                    <div><i class="fas fa-shopping-cart fa-lg my-0"></i>
+                                        <div class="my-0">
                                         {% if product_count != 0 %}
-                                        {{ product_count }}
+                                        <p class="circle">{{ product_count }}</p>
                                         {% else %}
                                         {% endif %}
-                                    </p>
+                                    </div>
+                                    </div>
                                 </div>
                             </a>
                         </li>
