@@ -4,7 +4,7 @@ html {
 
 body {
     height: 100%;
-    font-family: 'Murecho', sans-serif;
+    font-family: Helvetica Neue, helvetica, arial, sans-serif;
     color: black;
     padding: 0 !important;
     margin: 0 !important;
@@ -12,11 +12,13 @@ body {
 
 .enter {
     width: 400px;
-    display: block;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .rotate {
-    animation: rotation 7s;
+    animation: rotation 8s;
 }
 
 @keyframes rotation {
@@ -110,13 +112,26 @@ body {
 }
 
 .circle {
-    height: 23px;
-    width: 23px;
+    height: 19px;
+    width: 19px;
     color: white !important;
     background-color: rgb(124, 6, 98);
     border-radius: 50%;
-    font-size: 0.9rem; 
-    margin-left: 3px;
+    font-size: 0.8rem; 
+    margin-left: 4px;
+  }
+
+  footer {
+      border-top: 2px solid black;
+      bottom: 0px;
+      height: 50px;
+      width: 100%;
+      margin-top: 150px;
+      position: fixed;
+  }
+
+  .space {
+      padding: 100px;
   }
 
 /* -------------------------------- Media Queries */
