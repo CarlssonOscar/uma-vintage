@@ -137,6 +137,17 @@ body {
       padding: 100px;
   }
 
+  .message-container {
+    position: fixed;
+    top: 72px;
+    right: 145px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
