@@ -110,7 +110,7 @@ body {
 
 .top,
 .update-link,
-.remove-item {
+.delete-item {
     cursor: pointer;
 }
 
