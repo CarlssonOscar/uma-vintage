@@ -60,9 +60,9 @@ body {
 .store-button {
     background: black;
     color: white;
-    font-size: 1.3rem;
-    width: 180px;
-    height: 45px;
+    font-size: 1.1rem;
+    width: 140px;
+    height: 40px;
     border-radius: 0;
 }
 
@@ -124,15 +124,6 @@ body {
     margin-left: 4px;
   }
 
-  footer {
-      border-top: 2px solid black;
-      bottom: 0px;
-      height: 50px;
-      width: 100%;
-      margin-top: 150px;
-      position: fixed;
-  }
-
   .space {
       padding: 100px;
   }
@@ -148,6 +139,16 @@ body {
     overflow: visible;
 }
 
+
+.cart-notification-wrapper {
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.smaller {
+    font-size: 1.1rem;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

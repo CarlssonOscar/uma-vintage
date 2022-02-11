@@ -140,7 +140,9 @@
                 {% elif level == 30 %}
                     {% include 'includes/toasts/toast_alert.html' %}
                 {% elif level == 25 %}
+                {% if total != 0 %}
                     {% include 'includes/toasts/toast_intend.html' %}
+                {% endif %}
                 {% else %}
                     {% include 'includes/toasts/toast_info.html' %}
                 {% endif %}
