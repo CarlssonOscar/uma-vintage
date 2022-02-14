@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load cart_tools %}
 
 {% block page_header %}
 <div class="container header-container">
@@ -76,7 +77,7 @@
                             <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg store-button">
                                 <span>Back to Store</span>
                             </a>
-                            <a href="" class="btn btn-black btn-lg store-button">
+                            <a href="{% url 'checkout' %}" class="btn btn-black btn-lg store-button">
                                 <span>Checkout</span>
                             </a>
                         </td>

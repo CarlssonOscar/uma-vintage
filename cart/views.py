@@ -28,11 +28,11 @@ def add_to_cart(request, item_id):
 
 
 def delete_from_cart(request, item_id):
-    """Delete the item from the shopping bag"""
+    """Delete the item from the cart"""
     product = get_object_or_404(Product, pk=item_id)
     cart = request.session.get('cart', {})   
     cart.pop(item_id)
-    messages.success(request, f'Removed {product.name} from your bag')
+    messages.success(request, f'Removed {product.name} from your cart')
     
     request.session['cart'] = cart
     return HttpResponse(status=200)
