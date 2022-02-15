@@ -50,7 +50,7 @@
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
-                            <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0 small text-muted">{{ item.product.price | calc_subtotal:item.quantity }} SEK</p>
                         </div>
                     </div>
                 {% endfor %}
@@ -117,7 +117,7 @@
 							<span class="icon">
 								<i class="fas fa-exclamation-circle"></i>
 							</span>
-							<span>Your grand total is <strong>${{ grand_total|floatformat:2 }}</strong></span>
+							<span>Your grand total is <strong>{{ grand_total|floatformat:2 }} SEK</strong></span>
 						</p>
 					</div>
                 </form>
