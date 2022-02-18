@@ -53,7 +53,11 @@
                             <a href="{% url 'products' %}" class="btn store-button mt-4">
                                 <span>Back to Store</span>
                             </a>
-                            <input type="submit" class="btn btn-black store-button mt-4" value="Add to Cart">
+                            <!-- {% if product not in cart_items %} -->
+                                <input type="submit" class="btn btn-black store-button mt-4" value="Add to Cart">
+                            <!-- {% else %} -->
+                                <!-- <input type="submit" class="btn btn-black store-button mt-4" value="Already in Cart" disabled> -->
+                            <!-- {% endif %} -->
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>

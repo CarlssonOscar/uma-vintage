@@ -8,7 +8,7 @@ from .models import Product, Category
 def all_products(request):
     """ Shows all products, will include sorting and search queries as well """
 
-    products = Product.objects.all()
+    products = Product.objects.filter(stock__gte=1)
     search_query = None
     categories = None
     sort = None

@@ -18,7 +18,8 @@ def add_to_cart(request, item_id):
     cart = request.session.get('cart', {})
 
     if item_id in list(cart.keys()):
-        cart[item_id] += quantity
+        # cart[item_id] += quantity
+        messages.success(request, f'{product.name} is already in your cart')
     else:
         cart[item_id] = quantity
         messages.success(request, f'Added {product.name} to cart')

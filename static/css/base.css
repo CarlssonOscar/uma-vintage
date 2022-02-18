@@ -64,6 +64,7 @@ body {
     width: 135px;
     height: 45px;
     border-radius: 0;
+    line-height: 2;
 }
 
 
@@ -129,7 +130,6 @@ body {
   }
 
   .message-container {
-    position: fixed;
     top: 72px;
     right: 145px;
     z-index: 99999999999;
@@ -137,6 +137,9 @@ body {
 
 .custom-toast {
     overflow: visible;
+    position: fixed;
+    top: 72px;
+    right: 105px;
 }
 
 
@@ -183,3 +186,4 @@ body {
         width: 250px;
     }
 }
+ toast
