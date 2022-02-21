@@ -33,3 +33,13 @@
 #card-element {
     color: #000;
 }
+
+select,
+select option {
+    color: black;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}

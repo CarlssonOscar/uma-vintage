@@ -152,6 +152,10 @@ body {
 .smaller {
     font-size: 1.1rem;
 }
+
+input {
+    accent-color: black;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
