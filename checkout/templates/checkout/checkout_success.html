@@ -175,9 +175,15 @@
         </div>
         <div class="row mt-5">
 			<div class="col-12 col-lg-7 text-right">
-				<a href="{% url 'products' %}" class="btn btn-black store-button my-2">
+                {% if from_profile %}
+                    <a href="{% url 'profile' %}" class="btn store-button my-2">
+                        <span>Back to Profile</span>
+                    </a>
+                {% else %}
+				<a href="{% url 'products' %}" class="btn store-button my-2">
                     Back to Store
 				</a>
+                {% endif %}
 			</div>
 		</div>   
     </div>

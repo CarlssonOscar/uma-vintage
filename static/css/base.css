@@ -6,7 +6,7 @@ body {
     height: 100%;
     font-family: Helvetica Neue, helvetica, arial, sans-serif;
     color: black;
-    background-color: rgb(250, 241, 241);
+    background-color: white;
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -227,4 +227,3 @@ input {
         width: 250px;
     }
 }
-q
