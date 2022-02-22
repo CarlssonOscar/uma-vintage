@@ -42,10 +42,10 @@ def all_products(request):
             if not search_query:
                 messages.error(request, "Please enter a search criteria!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=search_query) | Q(description__icontains=search_query)
             products = products.filter(queries)
-    
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
@@ -73,13 +73,13 @@ def product_details(request, product_id):
 def add_product(request):
     """ Add a product to the store """
     if request.method == 'POST':
-        form = ProductForm()
+        form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully added product!')
+            messages.info(request, 'A new product was successfully added!')
             return redirect(reverse('add_product'))
         else:
-            messages.error(request, 'The product could not be added. Please ensure the form is valid.')
+            messages.error(request, 'The product could not be added. Please ensure the form input is valid.')
     else:
         form = ProductForm()
 

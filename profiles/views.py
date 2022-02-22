@@ -13,12 +13,13 @@ def profile(request):
         form = ProfilesForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Profile updated successfully')
+            messages.info(request, 'Profile updated successfully')
         else:
-             messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(request, 'Update failed. Please ensure the form is valid.')
     else:
         form = ProfilesForm(instance=profile)
     orders = profile.orders.all()
+
     template = 'profiles/profile.html'
     context = {
         'form': form,
