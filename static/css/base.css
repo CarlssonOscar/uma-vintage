@@ -4,7 +4,7 @@ html {
 
 body {
     height: 100%;
-    font-family: Helvetica Neue, helvetica, arial, sans-serif;
+    font-family: Helvetica Neue italic, helvetica, arial, sans-serif;
     color: black;
     background-color: white;
     padding: 0 !important;
@@ -16,7 +16,7 @@ body {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .rotate {
@@ -239,7 +239,7 @@ input {
     }
     
     .enter {
-        width: 350px;
+        width: 330px;
         margin-bottom: 10px;
     }
 
@@ -253,7 +253,8 @@ input {
     }
 
     .enter {
-        width: 200px;
+        width: 240px;
+        margin-bottom: 30px;
     }
 
     .indextext {
