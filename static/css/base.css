@@ -12,7 +12,7 @@ body {
 }
 
 .enter {
-    width: 400px;
+    width: 600px;
     align-items: center;
     display: inline-flex;
     justify-content: center;
@@ -239,7 +239,7 @@ input {
     }
     
     .enter {
-        width: 280px;
+        width: 350px;
         margin-bottom: 10px;
     }
 
