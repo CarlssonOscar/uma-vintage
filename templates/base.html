@@ -49,7 +49,7 @@
 </head>
 
 <body>
-    <header class="container-fluid w-75">
+    <header class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <a href="{% url 'index' %}" class="nav-link main-logo-link mx-auto">
@@ -62,15 +62,13 @@
                             <div><i class="fas fa-search fa-lg"></i></div>
                         </div>
                     </a>
-                    <div class="dropdown-menu border-0 w-50 p-3 my-0" aria-labelledby="mobile-search">
+                    <div class="dropdown-menu p-3 my-0 border-0 w-100" aria-labelledby="mobile-search">
                         <form class="form" method="GET" action="{% url 'products' %}">
                             <div class="input-group">
-                                <input class="form-control" type="text" name="sq"
+                                <input class="form-control border-0 search" type="text" name="sq"
                                     placeholder="Search for items">
                                 <div class="input-group-append">
-                                    <button
-                                        class="form-control  btn border-0"
-                                        type="submit">
+                                    <button class="form-control btn border-0" type="submit">
                                         <span class="icon">
                                             <i class="fas fa-search"></i>
                                         </span>
@@ -108,11 +106,11 @@
                                 <div class="text-center">
                                     <div><i class="fas fa-shopping-cart fa-lg my-0"></i>
                                         <div class="my-0">
-                                        {% if product_count != 0 %}
-                                        <p class="circle">{{ product_count }}</p>
-                                        {% else %}
-                                        {% endif %}
-                                    </div>
+                                            {% if product_count != 0 %}
+                                            <p class="circle">{{ product_count }}</p>
+                                            {% else %}
+                                            {% endif %}
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -135,22 +133,22 @@
     {% if messages %}
     <div class="message-container text-center mx-auto">
         {% for message in messages %}
-            {% with message.level as level %}
-                {% if level == 40 %}
-                    {% include 'includes/toasts/toast_error.html' %}
-                {% elif level == 30 %}
-                    {% include 'includes/toasts/toast_alert.html' %}
-                {% elif level == 25 %}
-                    {% if product_count != 0 %}
-                        {% include 'includes/toasts/toast_intend.html' %}
-                    {% endif %}
-                {% else %}
-                    {% include 'includes/toasts/toast_info.html' %}
-                {% endif %}
-            {% endwith %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_alert.html' %}
+        {% elif level == 25 %}
+        {% if product_count != 0 %}
+        {% include 'includes/toasts/toast_intend.html' %}
+        {% endif %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
         {% endfor %}
     </div>
-{% endif %}
+    {% endif %}
 
     {% block page_header %}
     {% endblock %}
@@ -163,6 +161,38 @@
         $('.toast').toast('show');
     </script>
     {% endblock %}
+    <footer>
+        <div class="container-header">
+            <div class="row">
+                <div class="col">
+                    <li class="my-auto py-1 py-lg-0 list-inline-item float-left text-center">
+                        <a class="text-black nav-link" href="#" id="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            2022 Umá
+                        </a>
+                    </li>
+                    <li class="my-auto py-1 py-lg-0 list-inline-item text-center">
+                        <a class="text-black nav-link" href="#" id="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            About
+                        </a>
+                    </li>
+                    <li class="my-auto py-1 py-lg-0 list-inline-item text-center">
+                        <a class="text-black nav-link" href="#" id="search" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="my-auto py-1 py-lg-0 list-inline-item float-right text-center">
+                        <a class="text-black nav-link" href="https://sv-se.facebook.com/" id="search" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Facebook
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
