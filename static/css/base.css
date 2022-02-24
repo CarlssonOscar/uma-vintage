@@ -255,4 +255,13 @@ input {
     .enter {
         width: 200px;
     }
+
+    .indextext {
+        font-size: 0.9rem;
+    }
+
+    .afooter {
+        font-size: 0.8rem;
+    }
+
 }
