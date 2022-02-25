@@ -16,7 +16,7 @@ class Webhook_Handler:
 
     def __init__(self, request):
         self.request = request
-    
+
     def _send_confirmation_email(self, order):
         """Send the user a confirmation email"""
         cust_email = order.email
@@ -26,7 +26,7 @@ class Webhook_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
@@ -124,7 +124,7 @@ class Webhook_Handler:
                             quantity=item_data,
                         )
                         order_line_item.save()
-        
+
             except Exception as e:
                 if order:
                     order.delete()
@@ -133,8 +133,8 @@ class Webhook_Handler:
                     status=500)
         self._send_confirmation_email(order)
         return HttpResponse(
-            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
-            status=200)
+                            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook', 
+                            status=200)
 
     def handle_payment_intent_payment_failed(self, event):
         """
