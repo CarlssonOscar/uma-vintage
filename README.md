@@ -15,20 +15,22 @@ The footer is despite it's languge very similar to the header in terms on design
 
 ## Header
 
-Except for showing the name of the company which takes one to the front-page the header of the page has svereal functionalites. The drop down menu on the left is a filter, a user can filter through by price, category, clothing and go back to show all.
-On the right there are three symbolsthe first symbolises a profile, it gives one ability to sign in or up. What is possible while logged in as a user or superuser will be covered later on. The second symbol is a cart, and takes one to the customers cart. The third displays a searchbar while clicked.
-
-## Profile
-
-Users of the site
+Except for showing the name of the company which takes one to the front-page the header of the page has svereal functionalites. The drop down menu on the left is a filter, a user can filter through the products by price, category, clothing and go back to show all.
+On the right there are three symbols the first symbolises a profile, it gives one the ability to sign in or up. What is possible while logged in as a user or superuser will be covered later on. The second symbol is a cart it takes one to the customers cart. If a product has been added a circle is shown under the cart with a number which shows how many products are in the cart. The color of the circle is based on onw of the colors in the logo. The third displays a searchbar while clicked it displays a input field.
 
 ## Footer
 
-## Products
+The footers content consist of a copyright symbol, about page and contact page links that are intended to be created in future and a facebook link that would guide one to a facebook page if there was one. Instead screenshots of the facebook page are shown later in the README.
 
-## Product details
+## Products page
 
-## Cart
+After one has entered the site via the index page one is greeted with all products available on the site. When having scrolled to the bottom of the page there is a arrow symbol which when clicked sends the user back to the top of the page.
+
+## Product details pages
+
+When clicking on a product the user is shown info about the product and is given the option to add the product to the cart or go back to the store.
+
+## Cart page
 
 The cart displays the products that are in the cart, some general info about the products and the total, delivery cost and grand total.
 
@@ -44,22 +46,29 @@ On top of the features availabel to a regular profile a supersusers profile has 
 
 Since each product on the site is unique a product can not be added more than once and the maximum quantity is one. After the checkout the product is deleted.
 
-## Message
+## Messages
 
-## Checkout
+Depending on what a user or superuser does on the site their are associated toast messages to clarify if an action went according to plan, if there are any issues with the site or the way an action was performed.
+
+## Checkout page
+
+The checkout page displays a form with details that fully or partially needs to be filled in depending on if the user has a profile or not and if the profile has saved its delivery information previously. The form also includes a input field for payment information. The page also includes an order summary and finally two button which let one go back to the cart or go through with the order.
 
 ### Stripe
 
+### Checkout success page
 
-
-## Facebook page
+If the form was filled in correctly and the payment goes through one is sent to the checkout success page: It confirms to the customer that the order went through and shows the order info as well as a button that takes on back to the store.
 
 # Future features
 
-* 
+The footer does at this point have a about and contact link that does now work. The to links seem resonable to have if this was a working site, but I'm choosing to not priotitize this because of time issues and that it would not fill a purpose just yet.
+* Create a about page with the story about the company and pictures of the store.
+* Create a contact page.
 
 # Testing
 
+Separeate file,
 ## Manual Testing
 
 ## HTML
