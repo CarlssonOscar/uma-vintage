@@ -52,9 +52,11 @@ Depending on what a user or superuser does on the site their are associated toas
 
 ## Checkout page
 
-The checkout page displays a form with details that fully or partially needs to be filled in depending on if the user has a profile or not and if the profile has saved its delivery information previously. The form also includes a input field for payment information. The page also includes an order summary and finally two button which let one go back to the cart or go through with the order.
+The checkout page displays a form with details that fully or partially needs to be filled in depending on if the user has a profile or not and if the user has saved its delivery information previously. The form also includes an input field for payment information. The page also includes an order summary and finally two button which let one go back to the cart or go through with the order.
 
 ### Stripe
+
+
 
 ### Checkout success page
 
