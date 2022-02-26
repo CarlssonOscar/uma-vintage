@@ -60,10 +60,6 @@ The checkout page displays a form with details that fully or partially needs to 
 
 ### Stripe
 
-# Facebook page
-
-![](media/facebook.jpg)
-
 ### Checkout success page
 
 If the form was filled in correctly and the payment goes through one is sent to the checkout success page. It confirms to the customer that the order went through and shows the order info as well as a button that takes one back to the store.
@@ -73,6 +69,10 @@ If the form was filled in correctly and the payment goes through one is sent to 
 The footer does at this point have a about and contact link that does now work. The to links seem resonable to have if this was a working site, but I'm choosing to not priotitize this because of time issues and that it would not fill a purpose just yet.
 * Create a about page with the story about the company and pictures of the store.
 * Create a contact page.
+
+# Facebook page
+
+![](media/facebook.jpg)
 
 # Testing
 
