@@ -8,11 +8,16 @@
 
 ## basic.html
 
-![](images/basic-W3C.jpg)
+![](media/.jpg)
 
 # CSS
 
-[W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to check the code,
+[W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to check the code.
+
+All warning was cause by supplier extensions and are not considered a cause for concern. profile.css went through the W3C validator without issues.
+
+![](media/base-css.jpg)
+![](media/checkout-css.jpg)
 
 
 # PEP8

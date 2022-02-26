@@ -70,13 +70,8 @@ The footer does at this point have a about and contact link that does now work. 
 
 # Testing
 
-Separeate file,
+The testing can be found [here](test.md).
 
-## Manual Testing
-
-## HTML
-
-## CSS
 
 ## Python
 [PEP8](http://pep8online.com//)

@@ -4,7 +4,7 @@ html {
 
 body {
     height: 100%;
-    font-family: Helvetica Neue italic, helvetica, arial, sans-serif;
+    font-family: "Helvetica Neue italic", helvetica, arial, sans-serif;
     color: black;
     background-color: white;
     padding: 0 !important;
@@ -228,7 +228,6 @@ input {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: black;
-    border-color: black;
     border-radius: 0;
 }
 
