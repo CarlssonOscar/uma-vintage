@@ -11,6 +11,10 @@ The sites main color is white with black text, symbols and buttons. The choice t
 
 The footer is despite it's languge very similar to the header in terms on design, the letters are bold and the Facebook logo is a familiar symbol to most people. 
 
+# User Stories
+
+![](media/user-stories.jpg)
+
 # Features
 
 ## Header
@@ -73,12 +77,6 @@ The footer does at this point have a about and contact link that does now work. 
 # Testing
 
 The testing can be found [here](test.md).
-
-
-## Python
-[PEP8](http://pep8online.com//)
-
-![](media/)
 
 
 # Unfixed Bugs
