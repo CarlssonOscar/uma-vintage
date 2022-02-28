@@ -28,6 +28,7 @@ All python code went through a [PEP8 online test](http://pep8online.com/). Excep
 
 * Index, logo rotates, works.
 * Index page logo doubles takes a user to the products page, works.
+* Favicon on all pages, works.
 * Header filter works without issues.
 * Header searchbar works without issues.
 * Header cart takes the user to the cart works.
@@ -58,7 +59,7 @@ All python code went through a [PEP8 online test](http://pep8online.com/). Excep
 * User Profile, receive confirmation mail (tested via authors mail) and link that finalizes the profile, works.
 * Profile info, can be saved and is shown during checkout, works.
 * Profile info, past orders is shown on page, works.
-* 
+* Superuser, 
 
 * Stripe
 * Stripe Webhooks
