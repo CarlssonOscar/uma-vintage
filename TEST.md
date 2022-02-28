@@ -53,16 +53,25 @@ All python code went through a [PEP8 online test](http://pep8online.com/). Excep
 * Checkout, "Create an account and "login" under form works and takes a user to respective alluth htmls, works.
 * Checkout, "Adjust Cart" button works and takes a user to the cart.
 * Checkout, if correct input in form, payment info and "Complete Order" button pressed the order goes through and the user is taken to the checkout succes page, works.
+* Checkout, bought products are removed from site, works.
 * Checkout success, order info shown, works.
 * Checkout success, if "Back to Store" button pressed the user is taken back to products page, works.
 * User Profile, can be created, works.
 * User Profile, receive confirmation mail (tested via authors mail) and link that finalizes the profile, works.
 * Profile info, can be saved and is shown during checkout, works.
 * Profile info, past orders is shown on page, works.
-* Superuser, 
+* Superuser, add product, works.
+* Superuser, edit product, works.
+* Superuser, delete product from product page, works.
+* Superuser, delete product from product details page, works.
 
-* Stripe
-* Stripe Webhooks
+Test card numbers.
+![](media/cardnumbers.jpg)
+
+* Stripe Webhooks, checkout succeedes with booth card numbers on page, works.
+* Stripe Webhooks, payment goes through on Stripe, works.
+
+![](media/cardnumbers.jpg)
 
 # Device Testing
 
