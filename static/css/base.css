@@ -52,6 +52,7 @@ body {
     justify-content: center;
     height: 1.8rem;
     width: 1.8rem;
+    background-color: white;
 }
 
 .main-logo-link {
@@ -70,7 +71,7 @@ body {
 
 
 .btn-white {
-    background: white;
+    background: white);
     color: black;
 }
 
@@ -94,7 +95,7 @@ body {
 	left: 0;
 	position: fixed;
 	background: white;
-	z-index: -1;
+	z-index: -2;
 }
 
 .shop-now {
@@ -159,6 +160,7 @@ input {
     accent-color: black;
 }
 
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -192,7 +194,7 @@ input {
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
 	display: inline-block;
-    color: #fff;
+    color: white;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
