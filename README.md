@@ -4,12 +4,12 @@
 # UX 
 The design of the website has been a collaboration with the author and the storeowners ideas for how the store should look. The minimalist design has it's limitations in terms of UX since it can come of as unclear. I'm aware that the lack of langueage could be a cause for concern since how to use the site can vauge to some people. But since it was pretty much a requirement from the client to keep language to a minimum I've tried to use as familiar symbols a possible to minimize confusion.
 
-On the first page on is greeted with a spinning company logo. The Logo is based on a LP shape, the choice to rotate it for this reason probably is obvious. The first idea was to spin the LP in the same pace as it normally would, which is 33 roations a minute. Unfortunatly this made it possible to read what is written on the logo so a slower rotation speed was settled on.
+On the first page on is greeted with a spinning company logo. The company logo is based on a LP shape, the choice to rotate it for this reason probably is obvious. The first idea was to spin the LP in the same pace as it normally would, which is 33 roations a minute. Unfortunatly this made it possible to read what is written on the logo so a slower rotation speed was settled on.
 
 The goal with the different parts of the site has been to keep them as similar as possible. 
-The sites main color is white with black text, symbols and buttons. The choice to use white is in part a decision made with the intention to keep the content in focus. Another aspect is that the author is not famililar with many photos direction tools, the index page rotating photo has a white background.
+The sites main color is white with black text, symbols and buttons. The choice to use white is a decision made with the intention to keep the content in focus, it was also based on the whishes of the client.
 
-The footer is despite it's languge very similar to the header in terms on design, the letters are bold and the Facebook logo is a familiar symbol to most people. 
+The footer is despite it's languge very similar to the header in terms on design, the letters are bold and the Facebook and Instagram logos is a familiar symbol to most people. 
 
 # User Stories
 
@@ -58,9 +58,11 @@ Depending on what a user or superuser does on the site their are associated toas
 
 The checkout page displays a form with details that fully or partially needs to be filled in depending on if the user has a profile or not and if the user has saved its delivery information previously. The form also includes an input field for payment information. The page also includes an order summary and finally two button which let one go back to the cart or go through with the order.
 
-### Stripe
+## Stripe 
 
-### Checkout success page
+Users can checkout using [Stripe](https://stripe.com/docs/security/stripe), which is a well establised and safe payment provider.
+
+## Checkout success page
 
 If the form was filled in correctly and the payment goes through one is sent to the checkout success page. It confirms to the customer that the order went through and shows the order info as well as a button that takes one back to the store.
 
@@ -80,7 +82,7 @@ The testing can be found [here](test.md).
 
 
 # Unfixed Bugs
-
+???
 
 # Deployment
 Deployment on Heroku.
@@ -97,9 +99,9 @@ Deployment on Heroku.
  Here is a link to the finished project [Úma](https://uma-vintage.herokuapp.com/).
 
 # Credits
-TIM!!!
 
 
 # Acknowledgements 
+My mentor Tim Nelson for providing excellent mentoring booth in terms of technical ability as well as being encouraging and motivating.
 
 [Code Institute](https://codeinstitute.net) for providing excellent course material and tutoring.
