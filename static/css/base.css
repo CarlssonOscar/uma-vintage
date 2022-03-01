@@ -12,21 +12,13 @@ body {
     margin: 0 !important;
 }
 
+html, body {
+    height: 100%;
+}
+
 body > footer {
     position: sticky;
     top: 100vh;
-}
-
-#landing-page {
-    width: 100vw;
-    height: 100vh;
-    z-index: 999;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .enter {
@@ -59,6 +51,7 @@ body > footer {
 }
 
 .header-container {
+    z-index: 99;
     height: 100px;
 }
 
@@ -98,8 +91,7 @@ body > footer {
 .btn-white:hover,
 .btn-white:active,
 .btn-white:focus {
-    color: white;
-    background-color: rgb(124, 6, 98);
+    color: rgb(124, 6, 98);
 }
 
 .text-black {
@@ -163,7 +155,6 @@ body > footer {
     right: 0px;
 }
 
-
 .cart-notification-wrapper {
     height: 150px;
     overflow-x: hidden;
@@ -178,8 +169,9 @@ input {
     accent-color: black;
 }
 
-
-
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    z-index: 2
+}
 
 /* -------------------------------- Media Queries */
 
@@ -221,6 +213,11 @@ input {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: black;
 }
 
 .btn-file {
