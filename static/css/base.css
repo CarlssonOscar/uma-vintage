@@ -12,13 +12,21 @@ body {
     margin: 0 !important;
 }
 
-html, body {
-    height: 100%;
-}
-
 body > footer {
     position: sticky;
     top: 100vh;
+}
+
+#landing-page {
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .enter {
