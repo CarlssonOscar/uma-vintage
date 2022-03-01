@@ -3,12 +3,13 @@ import os
 import dj_database_url
 
 if os.path.isfile("env.py"):
-    import env  # noqa
+    import env
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
-DEBUG = os.environ.get('DEBUG')
+if 'DEBUG' in os.environ:
+    DEBUG = True
 ALLOWED_HOSTS = ['uma-vintage.herokuapp.com', 'localhost']
 
 
