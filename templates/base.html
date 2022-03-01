@@ -45,7 +45,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title> {% block extra_title %}{% endblock %}</title>
+    <title>{% block extra_title %}Úma {% endblock %}</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -55,14 +55,14 @@
                 <a href="{% url 'index' %}" class="nav-link main-logo-link mx-auto">
                     <h1 class="display-4 text-black my-0 text-center p-4"><strong>Úma</strong></h1>
                 </a>
-                <li class="my-auto py-1 py-lg-0 list-inline-item float-right text-center">
+                <div class="my-auto py-1 py-lg-0 list-inline-item float-right text-center">
                     <a class="text-black nav-link" href="#" id="search" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         <div class="">
                             <div><i class="fas fa-search fa-lg"></i></div>
                         </div>
                     </a>
-                    <div class="dropdown-menu p-3 my-0 border-0 w-100" aria-labelledby="mobile-search">
+                    <div class="dropdown-menu p-3 my-0 border-0 w-100" aria-labelledby="search">
                         <form class="form" method="GET" action="{% url 'products' %}">
                             <div class="input-group">
                                 <input class="form-control border-0 search" type="text" name="sq"
@@ -77,26 +77,26 @@
                             </div>
                         </form>
                     </div>
-                </li>
+                </div>
                 <div class="my-auto py-1 py-lg-0 float-right">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
                             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
-                                    <div> <i class="fas fa-male fa-lg"></i> </div>
+                                    <div><i class="fas fa-male fa-lg"></i></div>
                                 </div>
                             </a>
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Sign Out</a>
+                                    {% if request.user.is_superuser %}
+                                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                    {% endif %}
+                                    <a href="{% url 'profile' %}" class="dropdown-item">Profile</a>
+                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Sign Out</a>
                                 {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Sign In</a>
+                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+                                    <a href="{% url 'account_login' %}" class="dropdown-item">Sign In</a>
                                 {% endif %}
                             </div>
                         </li>
@@ -107,8 +107,7 @@
                                     <div><i class="fas fa-shopping-cart fa-lg my-0"></i>
                                         <div class="my-0">
                                             {% if product_count != 0 %}
-                                            <p class="circle">{{ product_count }}</p>
-                                            {% else %}
+                                                <p class="circle">{{ product_count }}</p>
                                             {% endif %}
                                         </div>
                                     </div>
@@ -131,23 +130,23 @@
     </header>
 
     {% if messages %}
-    <div class="message-container text-center mx-auto">
-        {% for message in messages %}
-        {% with message.level as level %}
-        {% if level == 40 %}
-        {% include 'includes/toasts/toast_error.html' %}
-        {% elif level == 30 %}
-        {% include 'includes/toasts/toast_alert.html' %}
-        {% elif level == 25 %}
-        {% if product_count != 0 %}
-        {% include 'includes/toasts/toast_intend.html' %}
-        {% endif %}
-        {% else %}
-        {% include 'includes/toasts/toast_info.html' %}
-        {% endif %}
-        {% endwith %}
-        {% endfor %}
-    </div>
+        <div class="message-container text-center mx-auto">
+            {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_alert.html' %}
+                    {% elif level == 25 %}
+                        {% if product_count != 0 %}
+                            {% include 'includes/toasts/toast_intend.html' %}
+                        {% endif %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+        </div>
     {% endif %}
 
     {% block page_header %}
@@ -156,34 +155,35 @@
     {% block content %}
     {% endblock %}
 
-    {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
-    </script>
-    {% endblock %}
     <footer class="mt-auto p-4">
         <div class="container-header">
             <div class="row">
-                <div class="col">
+                <ul class="col">
                     <li class="my-auto py-1 py-lg-0 list-inline-item float-right text-center mb-3">
-                        <a class="text-black nav-link afooter" href="#" id="#"> 
-                            <strong>©2022  Úma</strong>
+                        <a class="text-black nav-link afooter" href="#">
+                            <strong>©2022 Úma</strong>
                         </a>
                     </li>
                     <li class="my-auto py-1 py-lg-0 list-inline-item float-left text-center mb-3">
-                        <a class="icon text-black nav-link" href="https://sv-se.facebook.com/" target=”_blank” id="#">
+                        <a class="icon text-black nav-link" href="https://sv-se.facebook.com/" target=”_blank”>
                             <i class="fab fa-facebook-f fa-lg"></i>
                         </a>
                     </li>
                     <li class="my-auto py-1 py-lg-0 list-inline-item float-left text-center ml-1 mb-3">
-                        <a class="icon text-black nav-link" href="https://www.instagram.com/umaumea/" target=”_blank” id="#" >
+                        <a class="icon text-black nav-link" href="https://www.instagram.com/umaumea/" target=”_blank”>
                             <i class="fab fa-instagram fa-lg"></i>
                         </a>
                     </li>
-                </div>
+                </ul>
             </div>
         </div>
     </footer>
-</body>
 
+    {% block postloadjs %}
+    <script>
+        $('.toast').toast('show');
+    </script>
+    {% endblock %}
+
+</body>
 </html>
