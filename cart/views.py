@@ -19,10 +19,10 @@ def add_to_cart(request, item_id):
 
     if item_id in list(cart.keys()):
         # cart[item_id] += quantity
-        messages.success(request, f'{product.name} is already in your cart')
+        messages.info(request, f'{product.name} is already in your cart')
     else:
         cart[item_id] = quantity
-        messages.success(request, f'Added {product.name} to cart')
+        messages.info(request, f'Added {product.name} to cart')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
@@ -33,7 +33,7 @@ def delete_from_cart(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     cart = request.session.get('cart', {})
     cart.pop(item_id)
-    messages.success(request, f'Removed {product.name} from your cart')
+    messages.info(request, f'Removed {product.name} from your cart')
 
     request.session['cart'] = cart
     return HttpResponse(status=200)
