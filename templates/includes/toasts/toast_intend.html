@@ -7,35 +7,36 @@
         </button>
     </div>
     <div class="toast-body bg-white text-black">
-    {% if grand_total %}
-        <h3>Cart</h3>
-        <div class="cart-notification-wrapper">
-            {% for item in cart_items %}
-                <div class="row">
-                    <div class="col-3 my-1">
-                    {% if item.product.image %}    
-                        <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                    {% else %}
-                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                    {% endif %}
-                </div>
-                <div class="col-9">
-                    <p class="my-0">{{ item.product.name }}</p>
-                    <p class="my-0">{{ item.product.price }}</p>
+        {% if grand_total %}
+            <h3>Cart</h3>
+            <div class="cart-notification-wrapper">
+                {% for item in cart_items %}
+                    <div class="row">
+                        <div class="col-3 my-1">
+                            {% if item.product.image %}
+                                <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                            {% else %}
+                                <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                            {% endif %}
+                        </div>
+                        <div class="col-9">
+                            <p class="my-0">{{ item.product.name }}</p>
+                            <p class="my-0">{{ item.product.price }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            {% if total != 0 %}
+                <p>Free delivery from 1000 SEK</p>
+                <p class="my-0">Delivered {{ grand_total }} SEK</p>
+            {% endif %}
+            <div class="row">
+                <div class="col">
+                    <a href="{% url 'view_cart' %}" class="btn text-success">
+                        <span class="smaller">Go to Cart</span>
+                    </a>
                 </div>
             </div>
-        {% endfor %}
+        {% endif %}
     </div>
-    {% if total != 0 %}
-    <p>Free delivery from 1000 SEK</p>
-    <p class="my-0">Delivered {{ grand_total }} SEK</p>
-    {% endif %}
-    <div class="row">
-        <div class="col">
-            <a href="{% url 'view_cart' %}" class="btn text-success">
-                <span class="smaller">Go to Cart</span>
-            </a>
-        </div>
-    </div>
-    {% endif %}
 </div>
