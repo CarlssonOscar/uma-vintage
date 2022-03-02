@@ -14,6 +14,7 @@ Since base.html is the page that all others extends from it has passed testing w
 ![](media/product-details.png)
 
 * edit_product.html / custom_clerable_file_input.html
+
 The errors all seem to be caused while rendering the form in forms.py, forms.py does how ever work as intended so a bit unclear if these errors are a cause of concern or not. The forms were rendered as cripsy forms which potentially could cause the problems. custom_clerable_file_input.html did not have any errors.
 
 ![](media/edit-product.png)
@@ -62,7 +63,7 @@ The javascript code was tested with [JSHint](https://jshint.com/)
 
 All python code went through a [PEP8 online test](http://pep8online.com/). 
 
-* Cart
+* cart
 
 apps.py
 
@@ -80,7 +81,7 @@ views.py
 
 ![](media/cart-views.png)
 
-* Checkout
+* checkout
 
 admin.py
 
@@ -164,6 +165,47 @@ widgets.py
 The to long line was left because of time restraints which did not enable enough time to find solutions.
 
 ![](media/prod-widgets.png)
+
+* profiles
+
+admin.py
+
+![](media/prof-admin.png)
+
+apps.py
+
+![](media/prof-apps.png)
+
+forms.py
+The to long line was left because of time restraints which did not enable enough time to find solutions.
+
+![](media/prof-forms.png)
+
+models.py
+
+![](media/prof-models.png)
+
+urls.py 
+
+![](media/prof-urls.png)
+
+views.py
+
+![](media/prof-views.png)
+
+* uma 
+
+setting.py
+
+![](media/uma-settings.py)
+
+urls.py
+
+![](media/uma-urls.png)
+
+wsgi.py
+
+![](media/uma-wsgi.png)
 
 # Manual Testing
 
