@@ -110,7 +110,7 @@ views.py
 
 ![](media/ch-views.png)
 
-webhook-handeler.py
+webhook-handler.py
 The to long lines were left because of time restraints which did not enable enough time to find solutions.
 
 ![](media/ch-wh-handler.png)
@@ -123,7 +123,47 @@ webhooks.py
 
 apps.py
 
-![](mediamedia/ind-apps.png))
+![](media/ind-apps.png)
+
+urls.py
+
+![](media/ind-urls.png)
+
+views.py
+
+![](media/ind-views.png)
+
+* products
+
+admin.py
+
+![](media/prod-admin.png)
+
+apps.py
+
+![](media/prod-apps.png)
+
+forms.py
+
+![](media/prod-forms.png)
+
+models.py
+
+![](media/prod-models.png)
+
+urls.py
+
+![](media/prod-urls.png)
+
+views.py 
+The to long lines were left because of time restraints which did not enable enough time to find solutions.
+
+![](media/prod-views.png)
+
+widgets.py
+The to long line was left because of time restraints which did not enable enough time to find solutions.
+
+![](media/prod-widgets.png)
 
 # Manual Testing
 
