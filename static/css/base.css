@@ -154,11 +154,7 @@ body > footer {
   }
 
   .message-container {
-    z-index: 5;
-}
-
-.zindex {
-    z-index: 99;
+    z-index: 999999999;
 }
 
 .custom-toast {
@@ -180,10 +176,6 @@ body > footer {
 
 input {
     accent-color: black;
-}
-
-.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    z-index: 2
 }
 
 /* -------------------------------- Media Queries */
@@ -292,4 +284,3 @@ input {
     }
 
 }
-z-index
