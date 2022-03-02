@@ -13,11 +13,35 @@ Since base.html is the page that all others extends from it has passed testing w
 * product_details.html
 ![](media/product-details.png)
 
+* edit_product.html / custom_clerable_file_input.html
+The errors all seem to be caused while rendering the form in forms.py, forms.py does how ever work as intended so a bit unclear if these errors are a cause of concern or not. The forms were rendered as cripsy forms which potentially could cause the problems. custom_clerable_file_input.html did not have any errors.
 
+![](media/edit-product.png)
+
+* add_product.html 
+The errors all seem to be caused while rendering the form in forms.py, forms.py does how ever work as intended so a bit unclear if these errors are a cause of concern or not. The forms were rendered as cripsy forms which potentially could cause the problems.
+
+![](media/add-product.png)
 
 * cart.html
 ![](media/cart.png)
 
+* checkout.html
+![](media/checkout.png)
+
+* checkout_success.html
+![](media/success)
+
+* profile.html
+The error was cause by these lines of code and as obvious it's the validator that has missinterpreted the code. The same page-header code is present throught most of the files that extend from base.html and did not cause a error then.
+![](media/cause-profile-error.png)
+![](media/profile.png)
+
+* login.html
+![](media/signin.png)
+
+* signup.html
+![](media/signup.png)
 
 
 # CSS
@@ -36,7 +60,22 @@ The javascript code was tested with [JSHint](https://jshint.com/)
 
 # PEP8
 
-All python code went through a [PEP8 online test](http://pep8online.com/). Except for a few lines that were keept long because of not finding an appropriate way to indent them the code is clean.
+All python code went through a [PEP8 online test](http://pep8online.com/). 
+
+* Cart
+
+apps.py
+![](media/cart-apps.png)
+
+contexts.py
+![](media/cart-contexts.png)
+
+urls.py
+![](media/cart-urls.png)
+
+views.py
+![](media/cart-views.png)
+
 
 # Manual Testing
 
