@@ -35,7 +35,9 @@ The errors all seem to be caused while rendering the form in forms.py, forms.py 
 
 * profile.html
 The error was cause by these lines of code and as obvious it's the validator that has missinterpreted the code. The same page-header code is present throught most of the files that extend from base.html and did not cause a error then.
+
 ![](media/cause-profile-error.png)
+
 ![](media/profile.png)
 
 * login.html

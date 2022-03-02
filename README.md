@@ -80,6 +80,36 @@ The footer does at this point have a about and contact link that does now work. 
 
 The testing can be found [here](test.md).
 
+## Models 
+
+* Checkout models
+
+The model generates an order, a unique order number and updates the grand total of the order based on if the total is under or above the delivery threshold and creates a unique order number
+![](media/order-model1.png)
+
+![](media/order-model2.png)
+
+The model works in conjunction with the order model and ensures that the products are part of the checkout. If their is more than one on a product (rare but happens within vintage), it updates the order total based on quantity.
+
+![](media/orderlineitem.png)
+
+* Products models
+
+The model works in conjunction with the categories.js fixture to enable categorization of products.
+
+![](media/category-model.png)
+
+The model works in conjunction with the Category model to enable adding products to the page with sufficient information about the product, correct categorization as well as keeping track of the stock. More than one of an item is rare within vintage so keeping track of the stock is crucial so an item can be removed after checkout.
+
+![](media/product-model.png)
+
+* Profiles models
+
+The model imports the django user model and enabels the creation of users, saving delivery information as well as updating the user delibery information.
+
+![](media/profiles-model).png
+
+
 ## Deployment
 
 ### **Forking**
