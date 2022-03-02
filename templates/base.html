@@ -62,7 +62,7 @@
                             <div><i class="fas fa-search fa-lg"></i></div>
                         </div>
                     </a>
-                    <div class="dropdown-menu p-3 my-0 border-0 w-100 zindex" aria-labelledby="search">
+                    <div class="dropdown-menu p-3 my-0 border-0 w-100 " aria-labelledby="search">
                         <form class="form" method="GET" action="{% url 'products' %}">
                             <div class="input-group">
                                 <input class="form-control border-0 search" type="text" name="sq"
@@ -87,7 +87,7 @@
                                     <div><i class="fas fa-male fa-lg"></i></div>
                                 </div>
                             </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            <div class="dropdown-menu border-0 zindex" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
                                         <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>

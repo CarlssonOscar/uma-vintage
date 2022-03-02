@@ -155,9 +155,6 @@ body > footer {
   .message-container {
     z-index: 4;
 }
-.zindex {
-    z-index: 5;
-}
 
 .custom-toast {
     overflow: visible;
