@@ -1,6 +1,24 @@
 # HTML
 
-Instaces of errors and warning using [W3C Markup Validator](https://validator.w3.org/#validate_by_input) were caused by referencing views, urls through {{ input }} {% input %} and considered "Bad values". They were also caused by the validator missing that parts that actually are present through the base.html are missing in the separate templates since they are an extention of base.html. Booth of these kinds of errors were not demed a cause for concern.
+ [W3C Markup Validator](https://validator.w3.org/#validate_by_input) was used tfor the tests.
+* base.html 
+Since base.html is the page that all others extends from it has passed testing without issues.
+
+* index.html
+ ![](media/index.png)
+
+* products.html
+![](media/products.png)
+
+* product_details.html
+![](media/product-details.png)
+
+
+
+* cart.html
+![](media/cart.png)
+
+
 
 # CSS
 

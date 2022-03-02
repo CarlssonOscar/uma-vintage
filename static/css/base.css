@@ -99,7 +99,8 @@ body > footer {
 .btn-white:hover,
 .btn-white:active,
 .btn-white:focus {
-    color: rgb(124, 6, 98);
+    background-color: rgb(124, 6, 98);
+    color: white;
 }
 
 .text-black {
@@ -153,7 +154,11 @@ body > footer {
   }
 
   .message-container {
-    z-index: 4;
+    z-index: 5;
+}
+
+.zindex {
+    z-index: 99;
 }
 
 .custom-toast {
