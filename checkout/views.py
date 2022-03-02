@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+                              render, redirect, reverse,
+                              get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -71,8 +73,8 @@ def checkout(request):
 
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your cart wasn't found in our database."
-                        "Please call us for assistance!")
+                        "The product wasn't found in our database."
+                        "Please contact us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_cart'))

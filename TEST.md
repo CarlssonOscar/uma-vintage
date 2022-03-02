@@ -65,17 +65,65 @@ All python code went through a [PEP8 online test](http://pep8online.com/).
 * Cart
 
 apps.py
+
 ![](media/cart-apps.png)
 
 contexts.py
+
 ![](media/cart-contexts.png)
 
 urls.py
+
 ![](media/cart-urls.png)
 
 views.py
+
 ![](media/cart-views.png)
 
+* Checkout
+
+admin.py
+
+![](media/ch-admin.png)
+
+apps.py
+
+![](media/ch-apps.png)
+
+forms.py
+
+![](media/ch-forms.png)
+
+models.py
+
+![](media/ch-models.png)
+
+signals.py
+
+![](media/ch-signals.png)
+
+urls.py
+
+![](media/ch-urls.png)
+
+views.py
+
+![](media/ch-views.png)
+
+webhook-handeler.py
+The to long lines were left because of time restraints which did not enable enough time to find solutions.
+
+![](media/ch-wh-handler.png)
+
+webhooks.py
+
+![](media/ch-webhooks.png)
+
+* index
+
+apps.py
+
+![](mediamedia/ind-apps.png))
 
 # Manual Testing
 
