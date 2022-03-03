@@ -1,6 +1,6 @@
-## Introduction
+# Introduction
 
-This project was treated as an order from a client, the customer is a company which sells vintage clothing in Sweden and is named Úma. The goal was to create website with a scandinavian minimalist design with focus on the content, which in their case are the pieces of clothing that they sell. Of course it also needed to provide all the functionalites that would be necessary to launch the site and use this project as a real webstore.
+This project was treated as an order from a client, the customer is a company which sells vintage clothing in Sweden and is named Úma. The goal was to create a website with a scandinavian minimalist design with focus on the content, which in their case are the pieces of clothing that they sell. Of course the site also needed to provide all the functionalites that would be necessary to launch the site and enalbe the customer to use the project as a real webstore.
 
 ![](media/front-page.jpg)
 ![](media/products.jpg)

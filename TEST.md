@@ -285,7 +285,12 @@ Pass: keeptesting
 * Checkout success, the customer receives a order confirmation email, works.
 
 * Messages, add product displays toast_intend with correct products, works.
-* Messages, info messages while deleting, 
+
+![](media/success-mes.png)
+
+* Messages, info, delete and warning, works.
+
+![](media/message-info.png)
 
 * User Profile, can be created, works.
 * User Profile, receive confirmation mail (tested via authors mail) and link that finalizes the profile, works.
@@ -504,6 +509,7 @@ Phone:
 
 * Samsung A52 - 
 * Iphone 7 - Works.
+* Iphone 12 - Works.
 
 Laptop:
 
@@ -513,4 +519,4 @@ Laptop:
 
 Tablet: 
 
-* Ipad A2270, Chrome - 
+* Ipad A2270, Chrome - Works.
