@@ -1,3 +1,5 @@
+
+
 ![](media/front-page.jpg)
 ![](media/products.jpg)
 
@@ -78,7 +80,7 @@ The footer does at this point have a about and contact link that does now work. 
 
 ## Testing
 
-The testing can be found [here](test.md).
+The testing can be found [here](TEST.md).
 
 ## Models 
 
@@ -90,7 +92,7 @@ The model generates an order, a unique order number and updates the grand total 
 
 ![](media/order-model2.png)
 
-The model works in conjunction with the order model and ensures that the products are part of the checkout. If their is more than one on a product (rare but happens within vintage), it updates the order total based on quantity.
+The model works in conjunction with the order model and ensures that the products are part of the checkout. If there is more than one of a product (rare but happens within vintage), it updates the order total based on quantity.
 
 ![](media/orderlineitem.png)
 
@@ -106,9 +108,9 @@ The model works in conjunction with the Category model to enable adding products
 
 * Profiles models
 
-The model imports the django user model and enabels the creation of users, saving delivery information as well as updating the user delibery information.
+The model imports the django user model and enabels the creation of users, saving delivery information as well as updating the user delivery information.
 
-![](media/profiles-model).png
+![](media/profiles-model.png)
 
 ## Deployment
 
@@ -165,6 +167,7 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
  Here is a link to the finished project [Úma](https://uma-vintage.herokuapp.com/).
 
 ## Credits
+
 
 
 ## Acknowledgements 

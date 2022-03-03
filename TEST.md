@@ -58,8 +58,19 @@ All warning was cause by supplier extensions and are not considered a cause for 
 
 # JavaScript
 
-The javascript code was tested with [JSHint](https://jshint.com/)
+The javascript code was tested with [JSHint](https://jshint.com/).
 
+* stripe_elements.jpg
+
+![](media/stripe-el.png)
+
+* cart.html js
+
+![](media/cart-js.png)
+
+* countryfield.js
+
+![](media/countryfield.png)
 
 # PEP8
 
@@ -211,15 +222,23 @@ wsgi.py
 
 # Manual Testing
 
+* Test users
+
+User: testuser1
+Pass: world123
+
+Superuser: admin1
+Pass: keeptesting
+
 * Index, logo rotates, works.
-* Index page logo doubles takes a user to the products page, works.
+* Index page logo doubles as a link and takes a user to the products page, works.
 
 * Favicon on all pages, works.
-* Header filter works without issues.
+* Header filter, works.
 * Header searchbar works without issues.
-* Header cart takes the user to the cart works.
+* Header cart takes the user to the cart, works.
 * Header cart, product count shows under if products are added, works.
-* Header profile dropdown, takes a user to allauth sign up if sign in pressed.
+* Header profile dropdown, takes a user to allauth sign up if sign in pressed, works.
 * Header profile dropdown, takes a user to allauth sign in if sign in pressed.
 
 * Product, all products show, works.
@@ -227,18 +246,18 @@ wsgi.py
 * Product, when a product is pressed a user comes to product details for the specific product, works.
 
 * Product details, if "Back to Store" button pressed the user goes back to products page, works.
-* Product details, if "Add to Cart" button pressed the product is added to the cart.
+* Product details, if "Add to Cart" button pressed the product is added to the cart , works.
 
 * Cart, only one of each product can be added to the cart since all products are unique, works.
 * Cart, all added products is shown in the cart, works.
 * Cart, product information is shown, works.
 * Cart, product cab be deleted, works.
 * Cart, total, delivery and grand total is calculated correctly, works.
-* Cart "Back to Store" takes the user to product page.
-* Cart "Checkout" button takes the user to the checkout page.
+* Cart "Back to Store" takes the user to product page, works.
+* Cart "Checkout" button takes the user to the checkout page, works.
 
 * Checkout, form with relevant delivery inputs, works.
-* Checkout, faulty inputs in form are not accepted and what the customer needs to do is obvious after pressing      "Complete Order", works.
+* Checkout, faulty inputs in form are not accepted and what the customer needs to do is obvious after pressing "Complete Order", works.
 * Checkout, order summary, works.
 * Checkout, "Create an account and "login" under form works and takes a user to respective alluth htmls, works.
 * Checkout, "Adjust Cart" button works and takes a user to the cart.
