@@ -1,4 +1,20 @@
-# HTML
+## Index – Table of Contents    
+
+* [HTML](##HTML)
+
+* [CSS](##CSS)
+
+* [JavaScript](##JavaScript)  
+
+* [PEP8](##PEP8)
+
+* [Manuel Testing](##Manual)
+
+* [Responsive Design](##Responsive)
+
+* [Device Testing](##Device)
+
+## HTML
 
  [W3C Markup Validator](https://validator.w3.org/#validate_by_input) was used tfor the tests.
 * base.html 
@@ -47,7 +63,7 @@ The error was cause by these lines of code and as obvious it's the validator tha
 ![](media/signup.png)
 
 
-# CSS
+## CSS
 
 [W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to check the code.
 
@@ -56,7 +72,7 @@ All warning was cause by supplier extensions and are not considered a cause for 
 ![](media/base-css.jpg)
 ![](media/checkout-css.jpg)
 
-# JavaScript
+## JavaScript
 
 The javascript code was tested with [JSHint](https://jshint.com/).
 
@@ -72,7 +88,7 @@ The javascript code was tested with [JSHint](https://jshint.com/).
 
 ![](media/countryfield.png)
 
-# PEP8
+## PEP8
 
 All python code went through a [PEP8 online test](http://pep8online.com/). 
 
@@ -220,7 +236,7 @@ wsgi.py
 
 ![](media/uma-wsgi.png)
 
-# Manual Testing
+## Manual Testing
 
 * Test users
 
@@ -286,9 +302,9 @@ Test card numbers.
 
 ![](media/cardnumbers.jpg)
 
-# Responsive design
+## Responsive design
 
-## Pages availabel to all
+### Pages availabel to all
 
 * Large screen
 
@@ -417,7 +433,7 @@ Sign out
 
 ![](media/phone-signout.png)
 
-## Pages availabel to users with profiles
+### Pages availabel to users with profiles
 
 * Large Screen
 
@@ -438,7 +454,7 @@ Profile
 ![](media/phone-prof1)
 ![](media/phone-prof2)
 
-## Pages availabel to superusers
+### Pages availabel to superusers
 
 Products
 Will only show one page since identical to products page except for edit | delete.
@@ -477,20 +493,18 @@ Edit Products
 ![](media/phone-edit1.png)
 ![](media/phone-edit2.png)
 
-
-
-# Device Testing
+## Device Testing
 
 Phone:
 
 * Samsung A52 - 
-* Iphone 7 - 
+* Iphone 7 - Works.
 
 Laptop:
 
-* Mac Book Pro, Chrome - 
-* Mac Book Pro, Firefox - 
-* Mac Book Pro, Brave - 
+* Mac Book Pro, Chrome - Works.
+* Mac Book Pro, Firefox - Works.
+* Mac Book Pro, Brave - Works.
 
 Tablet: 
 

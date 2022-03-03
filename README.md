@@ -28,6 +28,7 @@ This project was treated as an order from a client, the customer is a company wh
 * [Acknowledgements](##Acknowledgements)  
 
 ## UX 
+
 The design of the website has been a collaboration with the author and the storeowners ideas for how the store should look. The minimalist design has it's limitations in terms of UX since it can come of as unclear. I'm aware that the lack of langueage could be a cause for concern since how to use the site can vauge to some people. But since it was pretty much a requirement from the client to keep language to a minimum I've tried to use as familiar symbols a possible to minimize confusion.
 
 On the first page on is greeted with a spinning company logo. The company logo is based on a LP shape, the choice to rotate it for this reason probably is obvious. The first idea was to spin the LP in the same pace as it normally would, which is 33 roations a minute. Unfortunatly this made it possible to read what is written on the logo so a slower rotation speed was settled on.
@@ -190,6 +191,14 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
 
  Here is a link to the finished project [Úma](https://uma-vintage.herokuapp.com/).
 
+ ### Whitenoise
+
+ To serve the static files from the Django application [whitenoise](https://devcenter.heroku.com/articles/django-assets) was used. Since user images uploads was not necessary it made more sense to use whitenoise in stead of a AWS S3 bucket. To achive this the following was done:
+
+ - "pip3 instal whitenoise"
+ * In settings.py, within the **MIDDLEWARE_CLASSES** tuple, add
+ "'whitenoise.middleware.WhiteNoiseMiddleware'"
+
 ## Technologys
 
 ### Languages
@@ -214,13 +223,14 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
 * W3 html validator - test html code.
 * W3 css validator - test css code.
 * PEP8 - test Python code.
+* JShint - test JavaScript code.
 * Whitenoise - makes it possible to serve the projects own static files on Heroku.
 
 ## Credits
 
 The code which it made it possible to rotate the front page image was provided by [flaviocopes](https://flaviocopes.com/rotate-image/).
 
-Code Institutes Boutique Ado project was used as a point of departure for the project.
+Code Institutes Boutique Ado project was used as the point of departure for the project.
 
 ## Acknowledgements 
 
