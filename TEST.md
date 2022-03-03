@@ -507,7 +507,7 @@ Edit Products
 
 Phone:
 
-* Samsung A52 - 
+* Samsung A52 - Works.
 * Iphone 7 - Works.
 * Iphone 12 - Works.
 
