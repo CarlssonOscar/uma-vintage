@@ -265,6 +265,91 @@ Test card numbers.
 
 ![](media/cardnumbers.jpg)
 
+# Responsive design
+
+* Large screen
+
+Front page
+
+![](media/front-page.png)
+
+Header
+
+![](media/ls-header.png)
+
+Footer
+
+![](media/ls-footer.png)
+
+Products page
+
+![](media/products.jpg)
+
+Product details
+
+![](media/ls-pd.png)
+
+![](media/)
+
+![](media/)
+
+![](media/)
+
+![](media/)
+
+![](media/)
+
+* Laptop
+
+Front page
+![](media/lt-fp.png)
+
+Header
+
+![](media/lt-header.png)
+
+Footer
+
+![](media/lt-footer.png)
+
+Products
+
+![](media/lt-prod.png)
+
+Product details
+
+![](media/lt-pd.png)
+
+![](media/)
+
+![](media/)
+
+![](media/)
+
+* Phone
+
+Front-page
+
+![](media/phone-fp.png)
+
+Header
+
+![](media/phone-header.png)
+
+Footer
+
+![](media/phone-footer.png)
+
+Products
+
+![](media/phone-prod.png)
+
+Product details
+
+![](media/phone-pd.png)
+
+
+
 # Device Testing
 
 Phone:
