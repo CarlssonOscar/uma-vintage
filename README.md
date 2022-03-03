@@ -84,7 +84,8 @@ The testing can be found [here](test.md).
 
 * Checkout models
 
-The model generates an order, a unique order number and updates the grand total of the order based on if the total is under or above the delivery threshold and creates a unique order number
+The model generates an order, a unique order number and updates the grand total of the order based on if the total is under or above the delivery threshold and creates a unique order number.
+
 ![](media/order-model1.png)
 
 ![](media/order-model2.png)
@@ -108,7 +109,6 @@ The model works in conjunction with the Category model to enable adding products
 The model imports the django user model and enabels the creation of users, saving delivery information as well as updating the user delibery information.
 
 ![](media/profiles-model).png
-
 
 ## Deployment
 
