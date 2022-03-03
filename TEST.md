@@ -246,6 +246,7 @@ wsgi.py
 * Checkout, bought products are removed from site, works.
 * Checkout success, order info shown, works.
 * Checkout success, if "Back to Store" button pressed the user is taken back to products page, works.
+* Checkout success, the customer receives a order confirmation email, works.
 
 * User Profile, can be created, works.
 * User Profile, receive confirmation mail (tested via authors mail) and link that finalizes the profile, works.
@@ -262,6 +263,7 @@ Test card numbers.
 
 * Stripe Webhooks, checkout succeedes with booth card numbers on page, works.
 * Stripe Webhooks, payment goes through on Stripe, works.
+
 
 ![](media/cardnumbers.jpg)
 
@@ -398,10 +400,24 @@ Sign out
 
 ## Pages availabel to users with profiles
 
+* Large Screen
 
-![](media/)
-![](media/)
-![](media/)
+Profile
+
+![](media/ls-prof.png)
+
+* Laptop
+
+Profile
+
+![](media/lt-prof.png)
+
+* Phone
+
+Profile
+
+![](media/phone-prof1)
+![](media/phone-prof2)
 
 ## Pages availabel to superusers
 
@@ -412,17 +428,30 @@ Will only show one page since identical to products page except for edit | delet
 
 * Large Screen
 
+Add products
+
+![](media/ls-add.png)
+
 Edit products
 
 ![](media/ls-edit-product.png)
 
 * Laptop
 
+Add products
+
+![](media/lt-add.png)
+
 Edit products
 
 ![](media/lt-edit-product.png)
 
 * Phone
+
+Add products
+
+![](media/phone-add1.png)
+![](media/phone-add2.png)
 
 Edit Products
 
