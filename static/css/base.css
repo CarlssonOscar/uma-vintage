@@ -100,7 +100,7 @@ body > footer {
 .btn-white:active,
 .btn-white:focus {
     background-color: rgb(124, 6, 98);
-    color: white;
+    color: white !important;
 }
 
 .text-black {
