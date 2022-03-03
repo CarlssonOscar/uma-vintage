@@ -1,7 +1,31 @@
+## Introduction
 
+This project was treated as an order from a client, the customer is a company which sells vintage clothing in Sweden and is named Úma. The goal was to create website with a scandinavian minimalist design with focus on the content, which in their case are the pieces of clothing that they sell. Of course it also needed to provide all the functionalites that would be necessary to launch the site and use this project as a real webstore.
 
 ![](media/front-page.jpg)
 ![](media/products.jpg)
+ 
+ ## Index – Table of Contents    
+
+* [UX](##UX)
+
+* [User Stoires](##User)
+
+* [Features](##Features)  
+
+* [Future Features](##Future)
+
+* [Facebook Page](##Facebook)
+
+* [Testing](##Testing)
+
+* [Models](##Models)
+
+* [Deployment](##Deployment)
+
+* [Credits](##Credits)
+
+* [Acknowledgements](##Acknowledgements)  
 
 ## UX 
 The design of the website has been a collaboration with the author and the storeowners ideas for how the store should look. The minimalist design has it's limitations in terms of UX since it can come of as unclear. I'm aware that the lack of langueage could be a cause for concern since how to use the site can vauge to some people. But since it was pretty much a requirement from the client to keep language to a minimum I've tried to use as familiar symbols a possible to minimize confusion.
@@ -13,7 +37,7 @@ The sites main color is white with black text, symbols and buttons. The choice t
 
 The footer is despite it's languge very similar to the header in terms on design, the letters are bold and the Facebook and Instagram logos is a familiar symbol to most people. 
 
-## User Stories
+## User stories
 
 ![](media/user-stories.jpg)
 
@@ -166,11 +190,40 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
 
  Here is a link to the finished project [Úma](https://uma-vintage.herokuapp.com/).
 
+## Technologys
+
+### Languages
+
+* HTML
+* CSS 
+* JavaScript
+* Python
+
+### Libraries
+
+* Bootstrap 
+* Django 
+
+### Tools:
+
+* Heroku - for deployment.
+* Github - hosts the repository.
+* Cloudinary - storage of static files. 
+* Allauth - Enables the creation and hosting of users.
+* Google Chrome DevTools - for testing and debugging.
+* W3 html validator - test html code.
+* W3 css validator - test css code.
+* PEP8 - test Python code.
+* Whitenoise - makes it possible to serve the projects own static files on Heroku.
+
 ## Credits
 
+The code which it made it possible to rotate the front page image was provided by [flaviocopes](https://flaviocopes.com/rotate-image/).
 
+Code Institutes Boutique Ado project was used as a point of departure for the project.
 
 ## Acknowledgements 
+
 My mentor Tim Nelson for providing excellent mentoring booth in terms of technical ability as well as being encouraging and motivating.
 
 [Code Institute](https://codeinstitute.net) for providing excellent course material and tutoring.
