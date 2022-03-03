@@ -37,6 +37,10 @@ body > footer {
     margin-bottom: 50px;
 }
 
+.distance {
+    padding: 20px;
+}
+
 .rotate {
     animation: rotation 8s;
 }
@@ -272,6 +276,10 @@ input {
     .enter {
         width: 240px;
         margin-bottom: 30px;
+    }
+    
+    .distance {
+        padding: 20px;
     }
 
     .indextext {
