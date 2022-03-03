@@ -62,10 +62,6 @@ body > footer {
     animation-iteration-count: infinite;
 }
 
-.header-container {
-    height: 100px;
-}
-
 /* From Bulma */
 .icon {
     align-items: center;
@@ -255,10 +251,6 @@ input {
 
 @media (max-width: 1400px) {
     
-    .header-container {
-        height: 50px;
-    }
-    
     .enter {
         width: 330px;
         margin-bottom: 10px;
@@ -277,7 +269,7 @@ input {
         width: 240px;
         margin-bottom: 30px;
     }
-    
+
     .distance {
         padding: 20px;
     }
