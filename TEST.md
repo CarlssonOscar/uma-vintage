@@ -250,6 +250,7 @@ Pass: keeptesting
 * Index page logo doubles as a link and takes a user to the products page, works.
 
 * Favicon on all pages, works.
+
 * Header filter, works.
 * Header searchbar works without issues.
 * Header cart takes the user to the cart, works.
@@ -258,7 +259,7 @@ Pass: keeptesting
 * Header profile dropdown, takes a user to allauth sign in if sign in pressed.
 
 * Product, all products show, works.
-* Product on page filter, all works.
+* Product, on page filter, all works.
 * Product, when a product is pressed a user comes to product details for the specific product, works.
 
 * Product details, if "Back to Store" button pressed the user goes back to products page, works.
@@ -283,8 +284,12 @@ Pass: keeptesting
 * Checkout success, if "Back to Store" button pressed the user is taken back to products page, works.
 * Checkout success, the customer receives a order confirmation email, works.
 
+* Messages, add product displays toast_intend with correct products, works.
+* Messages, info messages while deleting, 
+
 * User Profile, can be created, works.
 * User Profile, receive confirmation mail (tested via authors mail) and link that finalizes the profile, works.
+
 * Profile info, can be saved and is shown during checkout, works.
 * Profile info, past orders is shown on page, works.
 
