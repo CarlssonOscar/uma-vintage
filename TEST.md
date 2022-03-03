@@ -267,6 +267,8 @@ Test card numbers.
 
 # Responsive design
 
+## Pages availabel to all
+
 * Large screen
 
 Front page
@@ -289,15 +291,25 @@ Product details
 
 ![](media/ls-pd.png)
 
-![](media/)
+Cart
 
-![](media/)
+![](media/ls-cart.png)
 
-![](media/)
+Checkout
 
-![](media/)
+![](media/ls-ch.png)
 
-![](media/)
+Checkout success
+
+![](media/ls-chs.png)
+
+Sign in
+
+![](media/ls-signin.png)
+
+Sign out
+
+![](media/ls-signout)
 
 * Laptop
 
@@ -320,11 +332,25 @@ Product details
 
 ![](media/lt-pd.png)
 
-![](media/)
+Cart
 
-![](media/)
+![](media/lt-cart.png)
 
-![](media/)
+Checkout
+
+![](media/lt-ch.png)
+
+Checkout success
+
+![](media/lt-chs.png)
+
+Sign in
+
+![](media/lt-signin.png)
+
+Sign out
+
+![](media/lt-signout.png)
 
 * Phone
 
@@ -347,6 +373,61 @@ Products
 Product details
 
 ![](media/phone-pd.png)
+
+Cart
+
+![](media/phone-cart.png)
+
+Checkout
+
+![](media/phone-ch-1.png)
+![](media/phone-ch-2.png)
+
+Checkout success
+
+![](media/phone-chs1.png)
+![](media/phone-chs2.png)
+
+Sign in
+
+![](media/phone-signin.png)
+
+Sign out
+
+![](media/phone-signout.png)
+
+## Pages availabel to users with profiles
+
+
+![](media/)
+![](media/)
+![](media/)
+
+## Pages availabel to superusers
+
+Products
+Will only show one page since identical to products page except for edit | delete.
+
+![](media/su-products.png)
+
+* Large Screen
+
+Edit products
+
+![](media/ls-edit-product.png)
+
+* Laptop
+
+Edit products
+
+![](media/lt-edit-product.png)
+
+* Phone
+
+Edit Products
+
+![](media/phone-edit1.png)
+![](media/phone-edit2.png)
 
 
 
