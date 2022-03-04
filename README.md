@@ -9,7 +9,7 @@ This project was treated as an order from a client, the customer is a company wh
 
 * [UX](##UX)
 
-* [User Stoires](##User)
+* [User Stories](##User)
 
 * [Wireframe](##Wireframe)
 
@@ -55,55 +55,85 @@ The footer is despite it's languge very similar to the header in terms on design
 Except for showing the name of the company which takes one to the front-page the header of the page has svereal functionalites. The drop down menu on the left is a filter, a user can filter through the products by price, category, clothing and go back to show all.
 On the right there are three symbols the first symbolises a profile, it gives one the ability to sign in or up. What is possible while logged in as a user or superuser will be covered later on. The second symbol is a cart it takes one to the customers cart. If a product has been added a circle is shown under the cart with a number which shows how many products are in the cart. The color of the circle is based on onw of the colors in the logo. The third displays a searchbar while clicked it displays a input field.
 
+![](media/header.png)
+
 ### Footer
 
 The footers content consist of a copyright symbol, about page and contact page links that are intended to be created in future and a facebook link that would guide one to a facebook page if there was one. Instead screenshots of the facebook page are shown later in the README.
+
+![](media/lt-footer.png)
 
 ### Products page
 
 After one has entered the site via the index page one is greeted with all products available on the site. When having scrolled to the bottom of the page there is a arrow symbol which when clicked sends the user back to the top of the page.
 
+![](media/products.jpg)
+
 ### Product details pages
 
 When clicking on a product the user is shown info about the product and is given the option to add the product to the cart or go back to the store.
+
+![](media/lt-pd.png)
 
 ### Cart page
 
 The cart displays the products that are in the cart, some general info about the products and the total, delivery cost and grand total.
 
+![](media/phone-cart.png)
+
 ### Profile
 
 Users of the site can create their own profile, the main features availbable to a user is being able to save their delivery info and keep track of previous orders.
+
+![](media/lt-prof.png)
 
 ### Superuser
 
 On top of the features availabel to a regular profile a supersusers profile has the abillity to add, edit and delete products from the site without having to use the admin page. 
 
+![](media/su-products.png)
+
 ### SKU
 
 Since each product on the site is unique a product can not be added more than once and the maximum quantity is one. After the checkout the product is deleted.
+
+![](media/sku.png)
 
 ### Messages
 
 Depending on what a user or superuser does on the site their are associated toast messages to clarify if an action went according to plan, if there are any issues with the site or the way an action was performed.
 
+![](media/success.png)
+![](media/message-info.png)
+
 ### Checkout page
 
 The checkout page displays a form with details that fully or partially needs to be filled in depending on if the user has a profile or not and if the user has saved its delivery information previously. The form also includes an input field for payment information. The page also includes an order summary and finally two button which let one go back to the cart or go through with the order.
+
+![](media/lt-ch.png)
 
 ### Stripe 
 
 Users can checkout using [Stripe](https://stripe.com/docs/security/stripe), which is a well establised and safe payment provider.
 
+![](media/stripe1.png)
+![](media/stripe2.png)
+
 ### Checkout success page
 
 If the form was filled in correctly and the payment goes through one is sent to the checkout success page. It confirms to the customer that the order went through and shows the order info as well as a button that takes one back to the store.
 
+![](media/lt-chs.png)
+
+### Order confirmation email
+
+![](media/ord-conf.png)
+
 ## Future features
 
-The footer does at this point have a about and contact link that does now work. The to links seem resonable to have if this was a working site, but I'm choosing to not priotitize this because of time issues and that it would not fill a purpose just yet.
 * Create a about page with the story about the company and pictures of the store.
 * Create a contact page.
+* Launch 
 
 ## Facebook page
 
