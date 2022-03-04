@@ -76,17 +76,21 @@ All warning was cause by supplier extensions and are not considered a cause for 
 
 The javascript code was tested with [JSHint](https://jshint.com/).
 
-* stripe_elements.jpg
+* stripe_elements.json
 
 ![](media/stripe-el.png)
 
-* cart.html js
+* cart.html json
 
 ![](media/cart-js.png)
 
-* countryfield.js
+* countryfield.json
 
 ![](media/countryfield.png)
+
+* categories.json
+
+![](media/categories-js.png)
 
 ## PEP8
 

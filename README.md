@@ -11,6 +11,8 @@ This project was treated as an order from a client, the customer is a company wh
 
 * [User Stoires](##User)
 
+* [Wireframe](##Wireframe)
+
 * [Features](##Features)  
 
 * [Future Features](##Future)
@@ -31,12 +33,16 @@ This project was treated as an order from a client, the customer is a company wh
 
 The design of the website has been a collaboration with the author and the storeowners ideas for how the store should look. The minimalist design has it's limitations in terms of UX since it can come of as unclear. I'm aware that the lack of langueage could be a cause for concern since how to use the site can vauge to some people. But since it was pretty much a requirement from the client to keep language to a minimum I've tried to use as familiar symbols a possible to minimize confusion.
 
-On the first page on is greeted with a spinning company logo. The company logo is based on a LP shape, the choice to rotate it for this reason probably is obvious. The first idea was to spin the LP in the same pace as it normally would, which is 33 roations a minute. Unfortunatly this made it possible to read what is written on the logo so a slower rotation speed was settled on.
+On the first page on is greeted with a rotating company logo. The company logo is based on a LP shape, the choice to rotate it for this reason probably is obvious. The first idea was to spin the LP in the same pace as it normally would, which is 33 roations a minute. Unfortunatly this made it possible to read what is written on the logo so a slower rotation speed was settled on.
 
 The goal with the different parts of the site has been to keep them as similar as possible. 
-The sites main color is white with black text, symbols and buttons. The choice to use white is a decision made with the intention to keep the content in focus, it was also based on the whishes of the client.
+The sites main color is white with black text, symbols and buttons. The choice to use white and black is a decision made with the intention to keep the content in focus, it was also based on the whishes of the client.
 
-The footer is despite it's languge very similar to the header in terms on design, the letters are bold and the Facebook and Instagram logos is a familiar symbol to most people. 
+The footer is despite it's languge very similar to the header in terms on design, the letters are bold and the Facebook and Instagram logos is a familiar symbols to most people.
+
+## Wireframe
+
+![](media/wire.png)
 
 ## User stories
 
@@ -224,7 +230,6 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
 * W3 css validator - test css code.
 * PEP8 - test Python code.
 * JShint - test JavaScript code.
-* Whitenoise - makes it possible to serve the projects own static files on Heroku.
 
 ## Credits
 
