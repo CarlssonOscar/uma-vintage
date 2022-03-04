@@ -371,9 +371,9 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
 
  To serve the static files from the Django application [whitenoise](https://devcenter.heroku.com/articles/django-assets) was used. Since user images uploads was not necessary it made more sense to use whitenoise in stead of a AWS S3 bucket. To achive this the following was done:
 
- - "pip3 instal whitenoise"
+ - `pip3 instal whitenoise`
  * In settings.py, within the **MIDDLEWARE_CLASSES** tuple, add
- "'whitenoise.middleware.WhiteNoiseMiddleware'"
+ `'whitenoise.middleware.WhiteNoiseMiddleware'`
 
 ## Technologys
 
