@@ -533,4 +533,4 @@ Tablet:
 
 * Ipad A2270, Chrome - Works.
 
-![](media/ipad.png)
+![](media/ipad.PNG)

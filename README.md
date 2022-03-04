@@ -55,7 +55,7 @@ The footer is despite it's languge very similar to the header in terms on design
 Except for showing the name of the company which takes one to the front-page the header of the page has svereal functionalites. The drop down menu on the left is a filter, a user can filter through the products by price, category, clothing and go back to show all.
 On the right there are three symbols the first symbolises a profile, it gives one the ability to sign in or up. What is possible while logged in as a user or superuser will be covered later on. The second symbol is a cart it takes one to the customers cart. If a product has been added a circle is shown under the cart with a number which shows how many products are in the cart. The color of the circle is based on onw of the colors in the logo. The third displays a searchbar while clicked it displays a input field.
 
-![](media/header.png)
+![](media/lt-header.png)
 
 ### Footer
 
@@ -103,7 +103,7 @@ Since each product on the site is unique a product can not be added more than on
 
 Depending on what a user or superuser does on the site their are associated toast messages to clarify if an action went according to plan, if there are any issues with the site or the way an action was performed.
 
-![](media/success.png)
+![](media/success-mes.png)
 ![](media/message-info.png)
 
 ### Checkout page
