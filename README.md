@@ -392,8 +392,8 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
 ### Tools:
 
 * [Heroku](https://id.heroku.com/login) - For deployment.
-* [Github] - Hosts the repository.
-* [Cloudinary] - Storage of static files. 
+* [Github](https://github.com/) - Hosts the repository.
+* [Cloudinary](https://cloudinary.com/) - Storage of static files. 
 * [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) - Enables the creation and hosting of users.
 * [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - For testing and debugging.
 * [W3 html validator](https://validator.w3.org/#validate_by_input) - Test html code.
