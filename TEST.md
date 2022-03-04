@@ -145,7 +145,6 @@ views.py
 ![](media/ch-views.png)
 
 webhook-handler.py
-The to long lines were left because of time restraints which did not enable enough time to find solutions.
 
 ![](media/ch-wh-handler.png)
 
@@ -263,26 +262,26 @@ Pass: keeptesting
 * Product, on page filter, all works.
 * Product, when a product is pressed a user comes to product details for the specific product, works.
 
-* Product details, if "Back to Store" button pressed the user goes back to products page, works.
-* Product details, if "Add to Cart" button pressed the product is added to the cart , works.
+* Product details, if `Back to Store` button pressed the user goes back to products page, works.
+* Product details, if `Add to Cart` button pressed the product is added to the cart , works.
 
 * Cart, only one of each product can be added to the cart since all products are unique, works.
 * Cart, all added products is shown in the cart, works.
 * Cart, product information is shown, works.
 * Cart, product cab be deleted, works.
 * Cart, total, delivery and grand total is calculated correctly, works.
-* Cart "Back to Store" takes the user to product page, works.
-* Cart "Checkout" button takes the user to the checkout page, works.
+* Cart `Back to Store` takes the user to product page, works.
+* Cart `Checkout` button takes the user to the checkout page, works.
 
 * Checkout, form with relevant delivery inputs, works.
-* Checkout, faulty inputs in form are not accepted and what the customer needs to do is obvious after pressing "Complete Order", works.
+* Checkout, faulty inputs in form are not accepted and what the customer needs to do is obvious after pressing `Complete Order`, works.
 * Checkout, order summary, works.
-* Checkout, "Create an account and "login" under form works and takes a user to respective alluth htmls, works.
-* Checkout, "Adjust Cart" button works and takes a user to the cart.
-* Checkout, if correct input in form, payment info and "Complete Order" button pressed the order goes through and the user is taken to the checkout succes page, works.
+* Checkout, `Create an account` and `login` under form works and takes a user to respective alluth htmls, works.
+* Checkout, `Adjust Cart` button works and takes a user to the cart.
+* Checkout, if correct input in form, payment info and `Complete Order` button pressed the order goes through and the user is taken to the checkout succes page, works.
 * Checkout, bought products are removed from site, works.
 * Checkout success, order info shown, works.
-* Checkout success, if "Back to Store" button pressed the user is taken back to products page, works.
+* Checkout success, if `Back to Store` button pressed the user is taken back to products page, works.
 * Checkout success, the customer receives a order confirmation email, works.
 
 * Messages, add product displays toast_intend with correct products, works.
@@ -508,16 +507,30 @@ Edit Products
 
 Phone:
 
-* Samsung A52 - Works.
 * Iphone 7 - Works.
-* Iphone 12 - Works.
+
+![](media/iph7.jpeg)
+
+* Samsung A51 - Works.
+
+![](media/a51.jpeg)
 
 Laptop:
 
 * Mac Book Pro, Chrome - Works.
+
+![](media/mac-chr.png)
+
 * Mac Book Pro, Firefox - Works.
+
+![](media/mac-fire.png)
+
 * Mac Book Pro, Brave - Works.
+
+![](media/mac-brave.png)
 
 Tablet: 
 
 * Ipad A2270, Chrome - Works.
+
+![](media/ipad.png)
