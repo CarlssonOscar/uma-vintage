@@ -119,29 +119,169 @@ The testing can be found [here](TEST.md).
 
 The model generates an order, a unique order number and updates the grand total of the order based on if the total is under or above the delivery threshold and creates a unique order number.
 
-![](media/order-model1.png)
+```python
+class Order(models.Model):
+    order_number = models.CharField(max_length=32, null=False, editable=False)
+    user_profile = models.ForeignKey(Profiles, on_delete=models.SET_NULL,
+                                     null=True, blank=True,
+                                     related_name='orders')
+    full_name = models.CharField(max_length=50, null=False, blank=False)
+    email = models.EmailField(max_length=254, null=False, blank=False)
+    phone_number = models.CharField(max_length=20, null=False, blank=False)
+    country = CountryField(blank_label='Country *', null=False, blank=False)
+    postcode = models.CharField(max_length=20, null=True, blank=True)
+    town_or_city = models.CharField(max_length=40, null=False, blank=False)
+    street_address1 = models.CharField(max_length=80, null=False, blank=False)
+    street_address2 = models.CharField(max_length=80, null=True, blank=True)
+    county = models.CharField(max_length=80, null=True, blank=True)
+    date = models.DateTimeField(auto_now_add=True)
+    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2,
+                                        null=False, default=0)
+    order_total = models.DecimalField(max_digits=10, decimal_places=2,
+                                      null=False, default=0)
+    grand_total = models.DecimalField(max_digits=10, decimal_places=2,
+                                      null=False, default=0)
+    original_cart = models.TextField(null=False, blank=False, default='')
+    stripe_pid = models.CharField(max_length=254, null=False, blank=False,
+                                  default='')
 
-![](media/order-model2.png)
+    def _generate_order_number(self):
+        """
+        uuid generates a random number, which will be used for the order
+        """
+        return uuid.uuid4().hex.upper()
+
+    def update_order(self):
+        """
+        Update grand total each time a line item is added,
+        accounting for delivery costs.
+        """
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
+            self.delivery_cost = 69
+        else:
+            self.delivery_cost = 0
+        self.grand_total = self.order_total + self.delivery_cost
+        self.save()
+
+    def save(self, *args, **kwargs):
+        """ If no previous order number has been set, the function overrides the
+            initial save method to set one
+        """
+        if not self.order_number:
+            self.order_number = self._generate_order_number()
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.order_number
+```
 
 The model works in conjunction with the order model and ensures that the products are part of the checkout. If there is more than one of a product (rare but happens within vintage), it updates the order total based on quantity.
 
-![](media/orderlineitem.png)
+```python
+class OrderLineItem(models.Model):
+    order = models.ForeignKey(Order, null=False, blank=False,
+                              on_delete=models.CASCADE,
+                              related_name='lineitems')
+    product = models.ForeignKey(Product, null=False, blank=False,
+                                on_delete=models.CASCADE)
+    quantity = models.IntegerField(null=False, blank=False, default=0)
+    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2,
+                                         null=False, blank=False,
+                                         editable=False)
+
+    def save(self, *args, **kwargs):
+        """
+        Override the original save method to set the lineitem total
+        and update the order total.
+        """
+        self.lineitem_total = self.product.price * self.quantity
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f'SKU {self.product.sku} on order {self.order.order_number}'
+```
 
 * Products models
 
 The model works in conjunction with the categories.js fixture to enable categorization of products.
 
-![](media/category-model.png)
+```python
+class Category(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
+```
 
 The model works in conjunction with the Category model to enable adding products to the page with sufficient information about the product, correct categorization as well as keeping track of the stock. More than one of an item is rare within vintage so keeping track of the stock is crucial so an item can be removed after checkout.
 
-![](media/product-model.png)
+```python
+class Product(models.Model):
+    category = models.ForeignKey('Category', null=True, blank=True,
+                                 on_delete=models.SET_NULL)
+    sku = models.CharField(max_length=254, null=True, blank=True)
+    name = models.CharField(max_length=254)
+    description = models.TextField()
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+    stock = models.IntegerField(null=True, default=1)
+
+    def __str__(self):
+        return self.name
+
+```
 
 * Profiles models
 
 The model imports the django user model and enabels the creation of users, saving delivery information as well as updating the user delivery information.
 
-![](media/profiles-model.png)
+```python
+class Profiles(models.Model):
+    """
+    Intended to maintain default delivery
+    information and order history
+    """
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    default_phone_number = models.CharField(max_length=20,
+                                            null=True, blank=True)
+    default_street_address1 = models.CharField(max_length=80,
+                                               null=True, blank=True)
+    default_street_address2 = models.CharField(max_length=80,
+                                               null=True, blank=True)
+    default_town_or_city = models.CharField(max_length=40, null=True,
+                                            blank=True)
+    default_county = models.CharField(max_length=80, null=True, blank=True)
+    default_postcode = models.CharField(max_length=20, null=True, blank=True)
+    default_country = CountryField(blank_label='Country', null=True,
+                                   blank=True)
+
+    def __str__(self):
+        return self.user.username
+
+    class Meta:
+        verbose_name_plural = "Profiles"
+
+
+@receiver(post_save, sender=User)
+def create_or_update_user_profile(sender, instance, created, **kwargs):
+    """
+    Create/update user profile
+    """
+    if created:
+        Profiles.objects.create(user=instance)
+    # For existing users: save profile
+    instance.profiles.save()
+```
 
 ## Deployment
 
@@ -211,31 +351,35 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
 
 * HTML
 * CSS 
-* JavaScript
-* Python
+* [JavaScript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
 
 ### Libraries
 
-* Bootstrap 
-* Django 
+* [Bootstrap](https://getbootstrap.com/)
+* [Django](https://www.djangoproject.com/) 
 
 ### Tools:
 
-* Heroku - for deployment.
-* Github - hosts the repository.
-* Cloudinary - storage of static files. 
-* Allauth - Enables the creation and hosting of users.
-* Google Chrome DevTools - for testing and debugging.
-* W3 html validator - test html code.
-* W3 css validator - test css code.
-* PEP8 - test Python code.
-* JShint - test JavaScript code.
+* [Heroku](https://id.heroku.com/login) - For deployment.
+* [Github] - Hosts the repository.
+* [Cloudinary] - Storage of static files. 
+* [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) - Enables the creation and hosting of users.
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - For testing and debugging.
+* [W3 html validator](https://validator.w3.org/#validate_by_input) - Test html code.
+* [W3 css validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - Test css code.
+* [PEP8](http://pep8online.com/) - Test Python code.
+* [JShint](https://jshint.com/) - Test JavaScript code.
 
 ## Credits
 
 The code which it made it possible to rotate the front page image was provided by [flaviocopes](https://flaviocopes.com/rotate-image/).
 
 Code Institutes Boutique Ado project was used as the point of departure for the project.
+
+All product images and the front page logo is the property of Phillip and Ludvig which own the company Úma and are used with their permission on the site.
+
+![](media/uma-cred.png)
 
 ## Acknowledgements 
 
