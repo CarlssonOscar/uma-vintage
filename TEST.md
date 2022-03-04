@@ -31,12 +31,9 @@ Since base.html is the page that all others extends from it has passed testing w
 
 * edit_product.html / custom_clerable_file_input.html
 
-The errors all seem to be caused while rendering the form in forms.py, forms.py does how ever work as intended so a bit unclear if these errors are a cause of concern or not. The forms were rendered as cripsy forms which potentially could cause the problems. custom_clerable_file_input.html did not have any errors.
-
 ![](media/edit-product.png)
 
-* add_product.html 
-The errors all seem to be caused while rendering the form in forms.py, forms.py does how ever work as intended so a bit unclear if these errors are a cause of concern or not. The forms were rendered as cripsy forms which potentially could cause the problems.
+* add_product.html
 
 ![](media/add-product.png)
 
