@@ -251,25 +251,56 @@ Pass: keeptesting
 
 * Favicon on all pages, works.
 
+![](media/favicon-all.png)
+
 * Header filter, works.
+
+![](media/filter-test.png)
+
 * Header searchbar works without issues.
+
+![](media/searchbar-test.png)
+
 * Header cart takes the user to the cart, works.
 * Header cart, product count shows under if products are added, works.
+
+![](media/p-count.png)
+
 * Header profile dropdown, takes a user to allauth sign up if sign in pressed, works.
+
+![](media/sign.png)
+
 * Header profile dropdown, takes a user to allauth sign in if sign in pressed.
+
+![](media/sign.png)
 
 * Product, all products show, works.
 * Product, on page filter, all works.
-* Product, when a product is pressed a user comes to product details for the specific product, works.
 
+![](media/filter-test.png)
+
+* Product, when a product is pressed a user comes to product details for the specific product, works.
 * Product details, if `Back to Store` button pressed the user goes back to products page, works.
 * Product details, if `Add to Cart` button pressed the product is added to the cart , works.
 
 * Cart, only one of each product can be added to the cart since all products are unique, works.
+
+![](media/onlyone.png)
+
 * Cart, all added products is shown in the cart, works.
+
+![](media/p-count.png)
+
 * Cart, product information is shown, works.
-* Cart, product cab be deleted, works.
+* Cart, product can be deleted, works.
+
+![](media/delete-su.png)
+
 * Cart, total, delivery and grand total is calculated correctly, works.
+
+![](media/calc1.png)
+![](media/calc2.png)
+
 * Cart `Back to Store` takes the user to product page, works.
 * Cart `Checkout` button takes the user to the checkout page, works.
 
@@ -280,9 +311,17 @@ Pass: keeptesting
 * Checkout, `Adjust Cart` button works and takes a user to the cart.
 * Checkout, if correct input in form, payment info and `Complete Order` button pressed the order goes through and the user is taken to the checkout succes page, works.
 * Checkout, bought products are removed from site, works.
+
+![](media/sku.png)
+
 * Checkout success, order info shown, works.
+
+![](media/lt-ch.png)
+
 * Checkout success, if `Back to Store` button pressed the user is taken back to products page, works.
 * Checkout success, the customer receives a order confirmation email, works.
+
+![](media/ord-conf.png)
 
 * Messages, add product displays toast_intend with correct products, works.
 
@@ -293,24 +332,45 @@ Pass: keeptesting
 ![](media/message-info.png)
 
 * User Profile, can be created, works.
+
+![](media/profile-prof.png)
+
 * User Profile, receive confirmation mail (tested via authors mail) and link that finalizes the profile, works.
 
+![](media/email-prog.png)
+
 * Profile info, can be saved and is shown during checkout, works.
+
+![](media/saved-us.png)
+
 * Profile info, past orders is shown on page, works.
 
+![](media/us-ord-sum.png)
+
 * Superuser, add product, works.
+
+![](media/add-prod-su.png)
+
 * Superuser, edit product, works.
+
+![](media/edit-prod-su.png)
+
 * Superuser, delete product from product page, works.
 * Superuser, delete product from product details page, works.
 
+![](media/delete-su.png)
+
 Test card numbers.
+
 ![](media/cardnumbers.jpg)
 
 * Stripe Webhooks, checkout succeedes with booth card numbers on page, works.
+
+![](media/stripe1.png)
+
 * Stripe Webhooks, payment goes through on Stripe, works.
 
-
-![](media/cardnumbers.jpg)
+![](media/stripe2.png)
 
 ## Responsive design
 
