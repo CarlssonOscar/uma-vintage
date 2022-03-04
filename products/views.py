@@ -44,7 +44,7 @@ def all_products(request):
                 messages.error(request, "Please enter a search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=search_query) | Q(description__icontains=search_query)
+            queries = Q(name__icontains=search_query) | Q(description__icontains=search_query)  # noqa
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -85,7 +85,7 @@ def add_product(request):
             messages.info(request, 'A new product was successfully added!')
             return redirect(reverse('product_details', args=[product.id]))
         else:
-            messages.error(request, 'The product could not be added. Please ensure the form input is valid.') # noqa
+            messages.error(request, 'The product could not be added. Please ensure the form input is valid.')  # noqa
     else:
         form = ProductForm()
 
@@ -112,7 +112,7 @@ def edit_product(request, product_id):
             messages.info(request, 'Updated product!')
             return redirect(reverse('product_details', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Ensure the form input is valid.')
+            messages.error(request, 'Failed to update product. Ensure the form input is valid.')  # noqa
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'Editing {product.name}')

@@ -190,12 +190,10 @@ urls.py
 ![](media/prod-urls.png)
 
 views.py 
-The to long lines were left because of time restraints which did not enable enough time to find solutions.
 
 ![](media/prod-views.png)
 
 widgets.py
-The to long line was left because of time restraints which did not enable enough time to find solutions.
 
 ![](media/prod-widgets.png)
 
@@ -210,7 +208,6 @@ apps.py
 ![](media/prof-apps.png)
 
 forms.py
-The to long line was left because of time restraints which did not enable enough time to find solutions.
 
 ![](media/prof-forms.png)
 
