@@ -10,6 +10,8 @@
 
 * [Manuel Testing](##Manual)
 
+* [Unfixed Bugs](##Unfixed)
+
 * [Responsive Design](##Responsive)
 
 * [Device Testing](##Device)
@@ -368,6 +370,10 @@ Test card numbers.
 * Stripe Webhooks, payment goes through on Stripe, works.
 
 ![](media/stripe2.png)
+
+## Unfixed bugs
+
+None that the author are aware of.
 
 ## Responsive design
 

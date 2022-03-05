@@ -367,6 +367,33 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
 
  Here is a link to the finished project [Úma](https://uma-vintage.herokuapp.com/).
 
+ ### Cloudinary
+
+ 1. Create an account at [Cloudinary](https://cloudinary.com/).
+
+ 2. On Cloudinary first page, copy the API environment variable string.
+
+ 3. In the projects env.py file add a CLOUDINARY_URL variable and add the value copied in stage 2.
+
+ 4. Update config cars in Heroku with the CLOUDINARY_URL variable and value.
+
+ 5. In the settings.py file in the project. Within INSTALLED_APPS ADD `cloudinary_storage` and `cloudinary`.
+
+ 6. Tell Django to store media and static files through adding the variables below in the settings.py file:
+
+ ```python
+ STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+ ```
+
+ After this the project is connected to Cloudinary.
+
  ### Whitenoise
 
  To serve the static files from the Django application [whitenoise](https://devcenter.heroku.com/articles/django-assets) was used. Since user images uploads was not necessary it made more sense to use whitenoise in stead of a AWS S3 bucket. To achive this the following was done:
@@ -374,6 +401,25 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
  - `pip3 instal whitenoise`
  * In settings.py, within the **MIDDLEWARE_CLASSES** tuple, add
  `'whitenoise.middleware.WhiteNoiseMiddleware'`
+
+ ### Stripe
+
+ 1. Create an account at [Stripe](https://stripe.com/se).
+
+ 2. Install Stripe in terminal: `pip3 install stripe`
+
+ 3. Add STRIPE_API_KEY AND STRIPE_SECRET_KEY variables found on the stripe mane page to env.py in the repository and to Heroku confiv vars.
+
+ ![](media/stripe-keys.png)
+
+ 4. Add the following in settings.py in the project.
+
+```python
+ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+```
+
+After this the project is connected to Stripe.
 
 ## Technologys
 
