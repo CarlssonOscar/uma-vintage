@@ -106,6 +106,12 @@ body > footer {
     color: black !important;
 }
 
+.fa-heart:hover,
+.fa-heart:active,
+.fa-heart:focus {
+    color: red;
+}
+
 .cover {
 	height: 100%;
 	width: 100%;

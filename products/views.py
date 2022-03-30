@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, WishlistForm
 
 
 def all_products(request):
@@ -137,3 +137,24 @@ def delete_product(request, product_id):
     product.delete()
     messages.info(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_to_wishlist(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == "POST":
+        form = WishlistForm(request.POST, instance=product)
+        if form.is_valid():
+            form.user = request.user
+            form.product = product
+            form.save()
+            messages.info(request, 'Added to Wishlist!')
+            return redirect(reverse('product_details', product_id))
+
+    form = WishlistForm(instance=product)
+    template = 'products/product_details.html'
+    context = {
+        'product': product,
+    }
+
+    return render(request, template, context)
