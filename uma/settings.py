@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'cart',
     'checkout',
     'profiles',
+    'newsletter',
 
     # Imported app
     'crispy_forms'
