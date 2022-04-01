@@ -1,25 +1,24 @@
 from django.shortcuts import render
-from .models import Newsletter
 from django.http import HttpResponseRedirect
+from .models import Newsletter
 from .forms import NewsletterForm
 
-# Create your views here.
-def newsletters(request):
-    
-    form_data = {
+
+def newsletters(request): 
+    if request.method == 'POST':
+        newsletter = request.session.get('newsletter', {})
+
+        form_data = {
             'email': request.POST['email'],
-    }
-    newsletter_form = NewsletterForm(form_data)
-    if newsletter_form.is_valid():
+        }
+        
+        newsletter_form = NewsletterForm(form_data)
+        if newsletter_form.is_valid():
+            newsletter_form.save()
+            messages.info(request, "Thanks for signing up to our Newsletter!")
 
-        if request.method == "POST":
-            form = NewsletterForm(request.POST)
-            if form.is_valid():
-                form.save()
-                messages.info(request, "Thanks for signing up to our Newsletter!")
-
+    template = HttpResponseRedirect(request.path_info)
     context = {
-        'email': 'email',
+        'newsletter_form': newsletter_form,
     }
     return render(request, template, context)
-    return HttpResponseRedirect(request.path_info)

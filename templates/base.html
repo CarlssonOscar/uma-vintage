@@ -176,14 +176,14 @@
                             <i class="fab fa-instagram fa-lg"></i>
                         </a>
                     </li>
-                    <form action="#" method="POST" id="">
+                    <form action="{% url 'newsletter' %}" method="POST" id="">
                         {% csrf_token %}
-                        <fieldset class="text-center">
-                           {{ NewsletterForm.email | as_crispy_field }} 
+                        <fieldset class="form-group form-row justify-content-center">
+                            newsletter_form.email | as_crispy_field
                             <div class="input-group-append">
                                 <button class="form-control btn border-0" type="submit">
                                     <span class="icon">
-                                        <i class="fas fa-search"></i>
+                                        <i class="fa fa-envelope mb-4"></i>
                                     </span>
                                 </button>
                             </div>
