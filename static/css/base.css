@@ -183,6 +183,28 @@ input {
     accent-color: black;
 }
 
+.afooter {
+    position: relative; bottom:5px;
+}
+
+.footericon1 {
+    position: relative; bottom:5px;
+}
+
+.footericon2 {
+    position: relative; bottom:3px;
+}
+
+#id_email {
+    border: 0px;
+    border-bottom: 2px solid black;
+    font-family: "Helvetica Neue italic", helvetica italic, arial, sans-serif;
+}
+
+.input-group-append {
+    position: relative; bottom:5px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -283,6 +305,10 @@ input {
     }
 
     .afooter {
+        font-size: 0.7rem;
+    }
+    #id_email {
+        width: 100px;
         font-size: 0.7rem;
     }
 
