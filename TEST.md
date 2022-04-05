@@ -8,7 +8,7 @@
 
 * [PEP8](##PEP8)
 
-* [Manuel Testing](##Manual)
+* [Manual Testing](##Manual)
 
 * [Unfixed Bugs](##Unfixed)
 
