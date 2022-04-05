@@ -271,6 +271,20 @@ class Product(models.Model):
 
 ```
 
+The model enables users with a profile to add products to a wishlist.
+
+```python
+class Wishlist(models.Model):
+    user = models.ForeignKey(User, null=True, blank=True,
+                             on_delete=models.SET_NULL)
+    product = models.ForeignKey(Product, null=True, blank=True,
+                                on_delete=models.SET_NULL)
+
+    def __str__(self):
+        return f"Wishlist item {self.product} for {self.user}"
+
+```
+
 * Profiles models
 
 The model imports the django user model and enabels the creation of users, saving delivery information as well as updating the user delivery information.
@@ -311,6 +325,18 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         Profiles.objects.create(user=instance)
     # For existing users: save profile
     instance.profiles.save()
+```
+
+* Newsletter model
+
+The model enables any users of the site to sign up for a newsletter.
+
+```python
+class Newsletter(models.Model):
+    email = models.EmailField(max_length=254, null=False, blank=False)
+
+    def __str__(self):
+        return self.email
 ```
 
 ## Deployment
