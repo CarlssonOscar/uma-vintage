@@ -165,6 +165,32 @@ views.py
 
 ![](media/ind-views.png)
 
+* newsletter
+
+apps.py
+
+![](media/apps-newsletter.png)
+
+contexts.py
+
+![](media/contexts-newsletter.png)
+
+forms.py
+
+![](media/forms-newsletter.png)
+
+models.py
+
+![](media/models-newsletter.png)
+
+urls.py
+
+![](media/urls-newsletter.png)
+
+views.py
+
+![](media/views-newsletter.png)
+
 * products
 
 admin.py
@@ -223,7 +249,7 @@ views.py
 
 * uma 
 
-setting.py
+settings.py
 
 ![](media/uma-settings.py)
 
