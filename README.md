@@ -379,7 +379,6 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
 
     - DATABASE_URL: `<your Postgress db URL from Heroku>`
     - SECRET_KEY: `<your secret key>`
-    - CLOUDINARY_URL: `<your Cloudinary key>`
     - STRIPE_SECRET_KEY: `<your Stripe secret key from the Stripe dashboard>`
     - STRIPE_PUBLIC_KEY: `<your Stripe public key from the Stripe dashboard>`
     - STRIPE_WEBHOOK_KEY: `<your Stripe webhook key. Only necessary if using webhooks.>`
@@ -395,33 +394,6 @@ To deploy the site remotely on [Heroku](https://www.heroku.com/) please follow t
 9. Wait for the message 'Your app was successfully deployed' and then click **View** to start your app in the browser.
 
  Here is a link to the finished project [Úma](https://uma-vintage.herokuapp.com/).
-
- ### Cloudinary
-
- 1. Create an account at [Cloudinary](https://cloudinary.com/).
-
- 2. On Cloudinary first page, copy the API environment variable string.
-
- 3. In the projects env.py file add a CLOUDINARY_URL variable and add the value copied in stage 2.
-
- 4. Update config cars in Heroku with the CLOUDINARY_URL variable and value.
-
- 5. In the settings.py file in the project. Within INSTALLED_APPS ADD `cloudinary_storage` and `cloudinary`.
-
- 6. Tell Django to store media and static files through adding the variables below in the settings.py file:
-
- ```python
- STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
- ```
-
- After this the project is connected to Cloudinary.
 
  ### Whitenoise
 
@@ -468,7 +440,6 @@ After this the project is connected to Stripe.
 
 * [Heroku](https://id.heroku.com/login) - For deployment.
 * [Github](https://github.com/) - Hosts the repository.
-* [Cloudinary](https://cloudinary.com/) - Storage of static files. 
 * [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) - Enables the creation and hosting of users.
 * [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - For testing and debugging.
 * [W3 html validator](https://validator.w3.org/#validate_by_input) - Test html code.
