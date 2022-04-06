@@ -128,6 +128,14 @@ If the form was filled in correctly and the payment goes through one is sent to 
 
 ![](media/lt-chs.png)
 
+### 404 error page
+
+![](media/404.png)
+
+### 500 error page
+
+![](media/500.png)
+
 ### Order confirmation email
 
 ![](media/ord-conf.png)
