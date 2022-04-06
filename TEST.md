@@ -46,7 +46,7 @@ Since base.html is the page that all others extends from it has passed testing w
 ![](media/checkout.png)
 
 * checkout_success.html
-![](media/success)
+![](media/success.png)
 
 * profile.html
 The error was cause by these lines of code and as obvious it's the validator that has missinterpreted the code. The same page-header code is present throught most of the files that extend from base.html and did not cause a error then.
@@ -452,7 +452,7 @@ Sign in
 
 Sign out
 
-![](media/ls-signout)
+![](media/ls-signout.png)
 
 * Laptop
 
