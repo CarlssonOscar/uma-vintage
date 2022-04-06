@@ -1,0 +1,170 @@
+[
+    {
+        "model":"products.product",
+        "pk":1,
+        "fields":{
+            "category":1,
+            "sku":"AA000001",
+            "name":"Metallica t-shirt, L",
+            "description":"Loose fit  T-shirt in cotton.\r\nRibbed collar. Large chest print.\r\n\r\nSize large.\r\n100% cotton.\r\nOrange.",
+            "price":"650.00",
+            "image_url":null,
+            "image":"metallica.jpg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":2,
+        "fields":{
+            "category":2,
+            "sku":"AA000002",
+            "name":"Olympics Lillehammer sweater, M",
+            "description":"Box fit  sweater in cotton.\r\nRibbed collar. Large chest print.\r\n\r\nSize medium.\r\n100% cotton.\r\nRed.",
+            "price":"650.00",
+            "image_url":null,
+            "image":"liillehammer-red.jpg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":3,
+        "fields":{
+            "category":2,
+            "sku":"AA000003",
+            "name":"Attitude sweater, M",
+            "description":"Regular fit sweater in cotton.\r\nRibbed collar. Text print on chest\r\n\r\nSize medium.\r\n100% Cotton.\r\nBlue.",
+            "price":"500.00",
+            "image_url":null,
+            "image":"attitude-blue.jpg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":4,
+        "fields":{
+            "category":3,
+            "sku":"AA000004",
+            "name":"Faux shearling-trimmed jacket, L",
+            "description":"Box fit jacket  in cotton. 4 front pockets. \r\nFaux shearling-trimmed collar.\r\n\r\nSize large.\r\nCotton, polyester.\r\nGrey.",
+            "price":"1000.00",
+            "image_url":null,
+            "image":"sherling-grey.jpg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":5,
+        "fields":{
+            "category":1,
+            "sku":"AA000005",
+            "name":"Tomb Raider t-shirt, L",
+            "description":"Loose fit t-shirt in cotton.\r\nRibbed collar. Large chest print.\r\n\r\nSize extra large.\r\n100% cotton\r\nBlack.",
+            "price":"750.00",
+            "image_url":null,
+            "image":"craft-black.jpg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":6,
+        "fields":{
+            "category":2,
+            "sku":"AA000006",
+            "name":"Spartans sweater, S",
+            "description":"Regular fit sweater in cotton.\r\nRibbed collar. Mid size chest print.\r\n\r\nSize small.\r\n100% cotton.\r\nBlack.",
+            "price":"450.00",
+            "image_url":null,
+            "image":"spartans-black.jpg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":7,
+        "fields":{
+            "category":3,
+            "sku":"AA000007",
+            "name":"Denim jacket, M",
+            "description":"Regular fit jacket in cotton from Levi's.\r\n\r\nSize medium.\r\n100% Cotton.\r\nBlue.",
+            "price":"600.00",
+            "image_url":null,
+            "image":"denim-blue.jpg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":8,
+        "fields":{
+            "category":3,
+            "sku":"AA000008",
+            "name":"Sherling-trimmed leather jacket, L",
+            "description":"Regular fit jacket in leather.\r\nTwo pockets. Shearling-trimmed collar.\r\n\r\nSize large.\r\nLeather, shearling.\r\nBrown, white.",
+            "price":"1100.00",
+            "image_url":null,
+            "image":"leather-brown.jpg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":9,
+        "fields":{
+            "category":1,
+            "sku":"AA000009",
+            "name":"Tyson vs Bruno t-shirt, XL",
+            "description":"Box fit t-shirt in cotton.\r\nRibbed collar. Large chest print\r\n\r\nSize extra large.\r\n100% Cotton.\r\nBlack.",
+            "price":"1300.00",
+            "image_url":null,
+            "image":"boxing-black.jpg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":10,
+        "fields":{
+            "category":2,
+            "sku":"AA000010",
+            "name":"Champion sweater, L",
+            "description":"Regular fit sweater in cotton.\r\nRibbed collar. Mid size chest print\r\n\r\nSize large.\r\n100% Cotton.\r\nGrey.",
+            "price":"400.00",
+            "image_url":null,
+            "image":"champion-grey.jpeg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":11,
+        "fields":{
+            "category":1,
+            "sku":"AA000011",
+            "name":"Beatles Revolver t-shirt, L",
+            "description":"Regular fit t-shirt in cotton.\r\nRibbed collar. Mid size chest print.\r\n\r\nSize large.\r\n100% Cotton.\r\nBlack.",
+            "price":"1500.00",
+            "image_url":null,
+            "image":"revlover-black.jpg",
+            "stock":1
+        }
+    },
+    {
+        "model":"products.product",
+        "pk":12,
+        "fields":{
+            "category":3,
+            "sku":"AA000012",
+            "name":"Parka, M",
+            "description":"Loose fit jacket in cotton.\r\nFaux fur lining.\r\n\r\nSize medium.\r\nCotton, polyester.\r\nGrey.",
+            "price":"800.00",
+            "image_url":null,
+            "image":"parka.jpg",
+            "stock":1
+        }
+    }
+]
