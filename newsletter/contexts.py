@@ -2,6 +2,7 @@ from django.contrib import messages
 from .models import Newsletter
 from .forms import NewsletterForm
 
+
 def newsletter_form_emails(request):
 
     if request.method == 'POST':
@@ -10,8 +11,8 @@ def newsletter_form_emails(request):
             newsletter_form.save()
             newsletter_form = NewsletterForm()
             messages.info(request,
-                                 'Thank you very much for subscribing \
-                                 to our newsletter')
+                          'Thank you very much for subscribing \
+                          to our newsletter')
     else:
         newsletter_form = NewsletterForm()
 
