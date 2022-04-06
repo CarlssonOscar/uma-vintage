@@ -177,7 +177,7 @@ contexts.py
 
 forms.py
 
-![](media/forms-newsletter.png)
+![](media/form-newsletter.png)
 
 models.py
 
@@ -251,7 +251,7 @@ views.py
 
 settings.py
 
-![](media/uma-settings.py)
+![](media/uma-settings.png)
 
 urls.py
 
