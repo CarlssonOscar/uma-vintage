@@ -61,6 +61,13 @@ The error was cause by these lines of code and as obvious it's the validator tha
 * signup.html
 ![](media/signup.png)
 
+* 404.html
+
+![](media/404-htmlw3c.png)
+
+* 500.html
+
+![](media/500-htmlw3c.png)
 
 ## CSS
 
