@@ -46,7 +46,10 @@ The footer is despite it's languge very similar to the header in terms on design
 
 ## User stories
 
-![](media/user-stories.jpg)
+[Github agile tool](https://github.com/CarlssonOscar/uma-vintage/projects/1)
+
+![](media/user-stories1.png)
+![](media/user-stories2.png)
 
 ## Features
 
