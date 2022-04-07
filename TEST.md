@@ -557,8 +557,8 @@ Profile
 
 Profile
 
-![](media/phone-prof1)
-![](media/phone-prof2)
+![](media/phone-prof1.png)
+![](media/phone-prof2.png)
 
 ### Pages availabel to superusers
 
