@@ -62,7 +62,7 @@ On the right there are three symbols the first symbolises a profile, it gives on
 
 ### Footer
 
-The footers content consist of a copyright symbol, about page and contact page links that are intended to be created in future and a facebook link that would guide one to a facebook page if there was one. Instead screenshots of the facebook page are shown later in the README.
+The footers content consist of a copyright symbol, newsletter sign up, a Instagram link to the stores instagram and a facebook link that would guide one to a facebook page if there was one. Instead screenshots of the facebook page are shown later in the README.
 
 ![](media/lt-footer.png)
 
